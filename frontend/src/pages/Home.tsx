@@ -1,0 +1,120 @@
+import { useEffect, useState } from "react";
+import Hero from "@/components/sections/Hero";
+import HorizontalScroll from "@/components/sections/HorizontalScroll";
+import OnOffSplit from "@/components/sections/OnOffSplit";
+import ProjectGrid from "@/components/sections/ProjectGrid";
+import MarqueeRow from "@/components/primitives/MarqueeRow";
+import ContactBlock from "@/components/sections/ContactBlock";
+import Section from "@/components/sections/Section";
+import { getProfile, getProjects, type Profile, type Project } from "@/lib/api";
+import { SITE } from "@/config/site";
+
+// Placeholder gallery items for the horizontal scroll
+const GALLERY_ITEMS = [
+  { type: "image" as const, alt: "[PLACEHOLDER] Gallery image 1", year: "2024" },
+  { type: "text" as const, quote: "It's not about the destination, it's about what you build on the way.", credit: "— [PLACEHOLDER]" },
+  { type: "image" as const, alt: "[PLACEHOLDER] Gallery image 2", year: "2023" },
+  { type: "image" as const, alt: "[PLACEHOLDER] Gallery image 3", year: "2023" },
+  { type: "text" as const, quote: "Good design is invisible. Great design is unforgettable.", credit: "— [PLACEHOLDER]" },
+  { type: "image" as const, alt: "[PLACEHOLDER] Gallery image 4", year: "2022" },
+  { type: "image" as const, alt: "[PLACEHOLDER] Gallery image 5", year: "2022" },
+  { type: "image" as const, alt: "[PLACEHOLDER] Gallery image 6", year: "2021" },
+];
+
+// Skills/clients for the marquee
+const SKILLS = [
+  "React", "TypeScript", "Motion Design", "Figma",
+  "Python", "FastAPI", "GSAP", "Tailwind",
+  "Product Strategy", "Design Systems", "3D", "Brand Identity",
+];
+
+export default function Home() {
+  const [profile,  setProfile]  = useState<Profile | null>(null);
+  const [projects, setProjects] = useState<Project[]>([]);
+
+  useEffect(() => {
+    getProfile().then(setProfile).catch(console.error);
+    getProjects().then(setProjects).catch(console.error);
+  }, []);
+
+  return (
+    <>
+      {/* 1. Hero */}
+      <Hero profile={profile} />
+
+      {/* 2. Horizontal scroll gallery */}
+      <Section theme="dark">
+        <HorizontalScroll items={GALLERY_ITEMS} />
+      </Section>
+
+      {/* 3. OnOffSplit */}
+      <OnOffSplit
+        left={{
+          label: SITE.splitLeft.label,
+          sub: SITE.splitLeft.sub,
+          description:
+            "[PLACEHOLDER] The craft of building — products, interfaces, and systems that work beautifully under the hood.",
+          link: "/work",
+          linkLabel: "See the work",
+        }}
+        right={{
+          label: SITE.splitRight.label,
+          sub: SITE.splitRight.sub,
+          description:
+            "[PLACEHOLDER] Writing, talks, and ideas shared with the community — because knowledge compounds when it's open.",
+          link: "/about",
+          linkLabel: "Read more",
+        }}
+      />
+
+      {/* 4. Featured projects */}
+      <Section
+        theme="dark"
+        style={{ padding: "var(--section-padding) var(--container-padding)" }}
+      >
+        <div className="container">
+          <p className="text-eyebrow" style={{ color: "var(--color--grey-2)", marginBottom: "1rem" }}>
+            Selected work
+          </p>
+          <h2 className="text-title-reg-mona" style={{ marginBottom: "3rem" }}>
+            Things I'm proud of
+          </h2>
+          <ProjectGrid projects={projects} limit={3} />
+        </div>
+      </Section>
+
+      {/* 5. Marquee rows — two rows, opposite directions */}
+      <Section
+        theme="dark"
+        style={{ padding: "2rem 0", borderBlock: "1px solid var(--color--dark-tint-2)" }}
+      >
+        <MarqueeRow speed={28} direction="left">
+          {SKILLS.map((s) => (
+            <span
+              key={s}
+              className="text-eyebrow"
+              style={{ padding: "0 2rem", color: "var(--color--grey-1)", whiteSpace: "nowrap" }}
+            >
+              {s} ·
+            </span>
+          ))}
+        </MarqueeRow>
+        <div style={{ height: "0.5rem" }} />
+        <MarqueeRow speed={22} direction="right">
+          {SKILLS.slice().reverse().map((s) => (
+            <span
+              key={s}
+              className="text-eyebrow"
+              style={{ padding: "0 2rem", color: "var(--color--accent)", whiteSpace: "nowrap" }}
+            >
+              {s} ·
+            </span>
+          ))}
+        </MarqueeRow>
+      </Section>
+
+      {/* 6. Contact CTA */}
+      <ContactBlock />
+    </>
+  );
+}

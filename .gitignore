@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+.venv/
+
+# Build output
+frontend/dist/
+frontend/.vite/
+
+# Database files
+backend/*.db
+backend/*.db-shm
+backend/*.db-wal
+
+# Environment secrets
+.env
+backend/.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+/tmp/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+.mypy_cache/
+.ruff_cache/
+
+# Editor
+.vscode/settings.json
+.idea/

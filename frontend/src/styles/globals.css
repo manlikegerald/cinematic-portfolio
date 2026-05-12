@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Mona+Sans:ital,wdth,wght@0,75..125,200..900;1,75..125,200..900&display=swap');
+
+/* ── Typography utility classes — mirrors landonorris.com naming ── */
+
+/* Eyebrow: uppercase small label */
+.text-eyebrow {
+  font-family: var(--font--body);
+  font-size: 0.625rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+/* Hero display — sans (Mona San) */
+.text-impact-reg-mona {
+  font-family: var(--font--body);
+  font-size: clamp(2.5rem, 8vw, 7rem);
+  font-weight: 800;
+  font-stretch: expanded; /* Mona Sans variable width axis */
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+}
+
+/* Hero display — serif (Fraunces) */
+.text-impact-reg-brier {
+  font-family: var(--font--display);
+  font-size: clamp(2.5rem, 8vw, 7rem);
+  font-weight: 900;
+  font-style: italic;
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+}
+
+/* Section title */
+.text-title-reg-mona {
+  font-family: var(--font--body);
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+/* Body copy */
+.text-body-reg-mona {
+  font-family: var(--font--body);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.65;
+}
+
+/* ── Scroll indicator bar (right edge, accent-colored) ── */
+.scroll-indicator-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 0%;
+  background: var(--color--accent);
+  z-index: 9999;
+  transform-origin: top;
+  pointer-events: none;
+}
+
+/* ── Container utility ── */
+.container {
+  width: 100%;
+  max-width: 1728px;
+  margin-inline: auto;
+  padding-inline: var(--container-padding);
+}
+
+/* ── Reduced motion: disable all transitions and animations ──
+   Animation hooks check this at runtime and skip GSAP timelines. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}

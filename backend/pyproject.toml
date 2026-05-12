@@ -1,0 +1,26 @@
+[project]
+name = "portfolio-backend"
+version = "0.1.0"
+requires-python = ">=3.9"
+dependencies = [
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.34",
+    "sqlalchemy>=2.0",
+    "pydantic[email]>=2.0",
+    "pydantic-settings>=2.0",
+    "aiosqlite>=0.20",
+    "aiosmtplib>=3.0",
+    "greenlet>=3.0",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+
+[tool.mypy]
+python_version = "3.9"
+strict = false
+ignore_missing_imports = true

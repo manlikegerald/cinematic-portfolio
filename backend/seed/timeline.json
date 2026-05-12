@@ -1,0 +1,50 @@
+[
+  {
+    "year": 2024,
+    "title": "[PLACEHOLDER] Started current role / project",
+    "description": "[PLACEHOLDER] Brief description of what this milestone means and why it matters.",
+    "category": "work"
+  },
+  {
+    "year": 2023,
+    "title": "[PLACEHOLDER] Award or recognition",
+    "description": "[PLACEHOLDER] What the award was for and what it meant to you.",
+    "category": "award"
+  },
+  {
+    "year": 2023,
+    "title": "[PLACEHOLDER] Personal milestone",
+    "description": "[PLACEHOLDER] A life event — moved cities, launched a side project, major trip.",
+    "category": "life"
+  },
+  {
+    "year": 2022,
+    "title": "[PLACEHOLDER] Joined Company / Team",
+    "description": "[PLACEHOLDER] Brief description of the role and what you shipped.",
+    "category": "work"
+  },
+  {
+    "year": 2021,
+    "title": "[PLACEHOLDER] Shipped project / product",
+    "description": "[PLACEHOLDER] What it was, the impact, what you learned.",
+    "category": "work"
+  },
+  {
+    "year": 2020,
+    "title": "[PLACEHOLDER] Life event",
+    "description": "[PLACEHOLDER] Anything meaningful — graduation, relocation, hobby picked up.",
+    "category": "life"
+  },
+  {
+    "year": 2019,
+    "title": "[PLACEHOLDER] First professional role",
+    "description": "[PLACEHOLDER] How it started — what you were hired to do and what you actually ended up doing.",
+    "category": "work"
+  },
+  {
+    "year": 2018,
+    "title": "[PLACEHOLDER] First shipped project",
+    "description": "[PLACEHOLDER] The very first thing you put into the world. Doesn't have to be impressive — just honest.",
+    "category": "work"
+  }
+]

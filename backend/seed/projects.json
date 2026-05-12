@@ -1,0 +1,103 @@
+[
+  {
+    "slug": "project-one",
+    "title": "[PLACEHOLDER] Project One",
+    "year": 2024,
+    "type": "Web",
+    "role": "Design & Build",
+    "summary": "[PLACEHOLDER] One-sentence hook that makes someone want to click through.",
+    "cover": "/images/projects/project-one-cover.jpg",
+    "gallery": [
+      "/images/projects/p1-1.jpg",
+      "/images/projects/p1-2.jpg"
+    ],
+    "content": [
+      { "type": "paragraph", "value": "[PLACEHOLDER] Opening paragraph — set the scene. What was the problem, who was it for, what were the constraints?" },
+      { "type": "image", "src": "/images/projects/p1-1.jpg", "caption": "[PLACEHOLDER] Caption describing what this image shows." },
+      { "type": "paragraph", "value": "[PLACEHOLDER] Middle section — what you built, key decisions, what you learned." }
+    ],
+    "tags": ["react", "typescript", "design"],
+    "link_live": null,
+    "link_repo": null
+  },
+  {
+    "slug": "project-two",
+    "title": "[PLACEHOLDER] Project Two",
+    "year": 2024,
+    "type": "App",
+    "role": "Full-Stack",
+    "summary": "[PLACEHOLDER] One-sentence hook.",
+    "cover": "/images/projects/project-two-cover.jpg",
+    "gallery": [],
+    "content": [
+      { "type": "paragraph", "value": "[PLACEHOLDER] Project Two description." }
+    ],
+    "tags": ["python", "fastapi", "mobile"],
+    "link_live": null,
+    "link_repo": null
+  },
+  {
+    "slug": "project-three",
+    "title": "[PLACEHOLDER] Project Three",
+    "year": 2023,
+    "type": "Brand",
+    "role": "Design",
+    "summary": "[PLACEHOLDER] One-sentence hook.",
+    "cover": "/images/projects/project-three-cover.jpg",
+    "gallery": [],
+    "content": [
+      { "type": "paragraph", "value": "[PLACEHOLDER] Project Three description." }
+    ],
+    "tags": ["figma", "branding", "identity"],
+    "link_live": null,
+    "link_repo": null
+  },
+  {
+    "slug": "project-four",
+    "title": "[PLACEHOLDER] Project Four",
+    "year": 2023,
+    "type": "Web",
+    "role": "Front-End",
+    "summary": "[PLACEHOLDER] One-sentence hook.",
+    "cover": "/images/projects/project-four-cover.jpg",
+    "gallery": [],
+    "content": [
+      { "type": "paragraph", "value": "[PLACEHOLDER] Project Four description." }
+    ],
+    "tags": ["react", "gsap", "animation"],
+    "link_live": null,
+    "link_repo": null
+  },
+  {
+    "slug": "project-five",
+    "title": "[PLACEHOLDER] Project Five",
+    "year": 2022,
+    "type": "App",
+    "role": "Product & Engineering",
+    "summary": "[PLACEHOLDER] One-sentence hook.",
+    "cover": "/images/projects/project-five-cover.jpg",
+    "gallery": [],
+    "content": [
+      { "type": "paragraph", "value": "[PLACEHOLDER] Project Five description." }
+    ],
+    "tags": ["product", "data", "python"],
+    "link_live": null,
+    "link_repo": null
+  },
+  {
+    "slug": "project-six",
+    "title": "[PLACEHOLDER] Project Six",
+    "year": 2021,
+    "type": "Brand",
+    "role": "Art Direction",
+    "summary": "[PLACEHOLDER] One-sentence hook.",
+    "cover": "/images/projects/project-six-cover.jpg",
+    "gallery": [],
+    "content": [
+      { "type": "paragraph", "value": "[PLACEHOLDER] Project Six description." }
+    ],
+    "tags": ["illustration", "brand"],
+    "link_live": null,
+    "link_repo": null
+  }
+]

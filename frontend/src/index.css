@@ -1,0 +1,4 @@
+/* Vite scaffold CSS cleared — all styles live in src/styles/ */
+@import url('./styles/tokens.css');
+@import url('./styles/reset.css');
+@import url('./styles/globals.css');
