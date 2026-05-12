@@ -12,7 +12,7 @@ import { SITE } from "@/config/site";
 
 // Placeholder gallery items for the horizontal scroll
 const GALLERY_ITEMS = [
-  { type: "image" as const, alt: "[PLACEHOLDER] Gallery image 1", year: "2024" },
+  { type: "image" as const, src: "/images/gallery/independence-day.jpg", alt: "One Voice Choir — Ghana Independence Day poster", year: "2024" },
   { type: "text" as const, quote: "It's not about the destination, it's about what you build on the way.", credit: "— [PLACEHOLDER]" },
   { type: "image" as const, alt: "[PLACEHOLDER] Gallery image 2", year: "2023" },
   { type: "image" as const, alt: "[PLACEHOLDER] Gallery image 3", year: "2023" },
