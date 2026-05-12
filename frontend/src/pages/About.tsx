@@ -87,14 +87,13 @@ export default function About() {
               alignItems: "start",
             }}
           >
-            {/* Portrait placeholder */}
+            {/* Portrait */}
             <div style={{ borderRadius: "var(--radius-lg)", overflow: "hidden", aspectRatio: "3/4", background: "var(--color--dark-tint-1)" }}>
-              <svg width="100%" height="100%" viewBox="0 0 300 400">
-                <rect width="300" height="400" fill="var(--color--dark-tint-1)" />
-                <text x="150" y="210" textAnchor="middle" fontSize="13" fill="var(--color--grey-2)" fontFamily="var(--font--body)">
-                  [PLACEHOLDER] Portrait
-                </text>
-              </svg>
+              <img
+                src="/images/gerald-portrait.jpg"
+                alt="Gerald Adjeman-Cofie"
+                style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }}
+              />
             </div>
 
             {/* Bio */}
