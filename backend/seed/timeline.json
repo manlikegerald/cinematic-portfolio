@@ -1,50 +1,50 @@
 [
   {
     "year": 2024,
-    "title": "[PLACEHOLDER] Started current role / project",
-    "description": "[PLACEHOLDER] Brief description of what this milestone means and why it matters.",
+    "title": "MDG Consultant for Africa — Wilmar Africa LTD",
+    "description": "Ensured 99% data accuracy in material master records using AI-driven validation, automated 85% of manual data governance tasks in SAP MDG, and improved supply chain forecasting accuracy by 30% across West and East Africa.",
     "category": "work"
   },
   {
     "year": 2023,
-    "title": "[PLACEHOLDER] Award or recognition",
-    "description": "[PLACEHOLDER] What the award was for and what it meant to you.",
+    "title": "PharstCare Campaign Trended #1 on X",
+    "description": "Spearheaded a social media marketing campaign on X for PharstCare during the launch of a new package on the app — it trended at #1 on X (formerly Twitter).",
     "category": "award"
   },
   {
     "year": 2023,
-    "title": "[PLACEHOLDER] Personal milestone",
-    "description": "[PLACEHOLDER] A life event — moved cities, launched a side project, major trip.",
+    "title": "One Voice Choir 20th Anniversary Concert",
+    "description": "Directed and produced the full publicity campaign and live production for a musical concert fused with a live podcast session marking the choir's 20th anniversary.",
+    "category": "work"
+  },
+  {
+    "year": 2022,
+    "title": "Graphic Designer & Social Media Manager — Multiple Clients",
+    "description": "Took on concurrent remote roles with One Voice Choir Ghana, BACE Africa, Houndle (UK), and MikeJobs — delivering brand design, video content, and paid social campaigns achieving an average ROAS of 4.2x.",
+    "category": "work"
+  },
+  {
+    "year": 2022,
+    "title": "BSc Computer Science — Valley View University",
+    "description": "Graduated with a BSc in Computer Science from Valley View University, Accra, Ghana.",
     "category": "life"
   },
   {
     "year": 2022,
-    "title": "[PLACEHOLDER] Joined Company / Team",
-    "description": "[PLACEHOLDER] Brief description of the role and what you shipped.",
-    "category": "work"
-  },
-  {
-    "year": 2021,
-    "title": "[PLACEHOLDER] Shipped project / product",
-    "description": "[PLACEHOLDER] What it was, the impact, what you learned.",
+    "title": "Brand Influencer — PharstCare, BetKing & EIB Qatar 2022",
+    "description": "Served as brand influencer on X for three concurrent campaigns — PharstCare, BetKing Ghana, and EIB's Qatar 2022 coverage — building audience and driving engagement.",
     "category": "work"
   },
   {
     "year": 2020,
-    "title": "[PLACEHOLDER] Life event",
-    "description": "[PLACEHOLDER] Anything meaningful — graduation, relocation, hobby picked up.",
-    "category": "life"
-  },
-  {
-    "year": 2019,
-    "title": "[PLACEHOLDER] First professional role",
-    "description": "[PLACEHOLDER] How it started — what you were hired to do and what you actually ended up doing.",
+    "title": "Valley View University Media Team",
+    "description": "Joined the VVU Media Team, planning and executing social media strategies, producing short-form video content achieving 20K+ monthly views, and assisting with packaging design and brand guideline documents.",
     "category": "work"
   },
   {
     "year": 2018,
-    "title": "[PLACEHOLDER] First shipped project",
-    "description": "[PLACEHOLDER] The very first thing you put into the world. Doesn't have to be impressive — just honest.",
-    "category": "work"
+    "title": "General Science — Swedru Senior High School",
+    "description": "Completed secondary education with a focus on General Science at Swedru Senior High School.",
+    "category": "life"
   }
 ]

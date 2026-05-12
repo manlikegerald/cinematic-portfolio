@@ -27,16 +27,16 @@ function TimelineEntry({ item }: { item: TimelineItem }) {
         borderBottom: "1px solid var(--color--dark-tint-2)",
       }}
     >
-      <span className="text-eyebrow" style={{ color: "var(--color--accent)", paddingTop: "0.25rem" }}>
+      <span className="text-eyebrow" style={{ color: "var(--color--accent)", paddingTop: "0.25rem", fontSize: "0.75rem" }}>
         {item.year}
       </span>
       <div>
         <HighlightLine trigger="scroll">
-          <h3 className="text-title-reg-mona" style={{ display: "inline" }}>
+          <h3 className="text-title-reg-mona" style={{ display: "inline", fontSize: "clamp(1.1rem, 2vw, 1.5rem)" }}>
             {item.title}
           </h3>
         </HighlightLine>
-        <p className="text-body-reg-mona" style={{ marginTop: "0.5rem", color: "var(--color--grey-2)" }}>
+        <p className="text-body-reg-mona" style={{ marginTop: "0.5rem", color: "var(--color--grey-2)", fontSize: "clamp(1rem, 1.5vw, 1.15rem)", lineHeight: 1.8 }}>
           {item.description}
         </p>
         <span
@@ -44,6 +44,7 @@ function TimelineEntry({ item }: { item: TimelineItem }) {
           style={{
             display: "inline-block",
             marginTop: "0.5rem",
+            fontSize: "0.75rem",
             color: item.category === "work"
               ? "var(--color--accent)"
               : item.category === "award"
@@ -98,7 +99,7 @@ export default function About() {
 
             {/* Bio */}
             <div>
-              <p className="text-eyebrow" style={{ color: "var(--color--grey-2)", marginBottom: "1rem" }}>
+              <p className="text-eyebrow" style={{ color: "var(--color--grey-2)", marginBottom: "1rem", fontSize: "0.75rem" }}>
                 About
               </p>
               <SplitText
@@ -107,27 +108,27 @@ export default function About() {
                 anim="reveal-clip"
                 start="top 95%"
                 className="text-impact-reg-brier"
-                style={{ marginBottom: "2rem", fontSize: "clamp(2rem, 5vw, 3.5rem)" }}
+                style={{ marginBottom: "2rem", fontSize: "clamp(2.5rem, 6vw, 5rem)" }}
               >
                 {profile?.name ?? SITE.name}
               </SplitText>
-              <p className="text-body-reg-mona" style={{ color: "var(--color--grey-1)", lineHeight: 1.8 }}>
+              <p className="text-body-reg-mona" style={{ color: "var(--color--grey-1)", lineHeight: 1.85, fontSize: "clamp(1.05rem, 1.8vw, 1.25rem)" }}>
                 {bio}
               </p>
             </div>
           </div>
 
           {/* Timeline */}
-          <p className="text-eyebrow" style={{ color: "var(--color--grey-2)", marginBottom: "0.5rem" }}>
+          <p className="text-eyebrow" style={{ color: "var(--color--grey-2)", marginBottom: "0.5rem", fontSize: "0.75rem" }}>
             Timeline
           </p>
-          <h2 className="text-title-reg-mona" style={{ marginBottom: "2rem" }}>
+          <h2 className="text-title-reg-mona" style={{ marginBottom: "2rem", fontSize: "clamp(1.75rem, 3.5vw, 2.75rem)" }}>
             How I got here
           </h2>
           {timeline.length > 0 ? (
             timeline.map((item) => <TimelineEntry key={item.id} item={item} />)
           ) : (
-            <p className="text-body-reg-mona" style={{ color: "var(--color--grey-2)" }}>
+            <p className="text-body-reg-mona" style={{ color: "var(--color--grey-2)", fontSize: "1.1rem" }}>
               [PLACEHOLDER] Timeline entries will appear here after seeding the database.
             </p>
           )}
@@ -144,7 +145,7 @@ export default function About() {
             <span
               key={v}
               className="text-eyebrow"
-              style={{ padding: "0 2rem", color: "var(--color--black)", whiteSpace: "nowrap", fontSize: "0.75rem" }}
+              style={{ padding: "0 2rem", color: "var(--color--black)", whiteSpace: "nowrap", fontSize: "0.85rem" }}
             >
               {v} ·
             </span>

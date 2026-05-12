@@ -4,6 +4,7 @@ import HorizontalScroll from "@/components/sections/HorizontalScroll";
 import OnOffSplit from "@/components/sections/OnOffSplit";
 import ProjectGrid from "@/components/sections/ProjectGrid";
 import MarqueeRow from "@/components/primitives/MarqueeRow";
+import { ALL_TOOL_LOGOS } from "@/components/primitives/ToolLogos";
 import ContactBlock from "@/components/sections/ContactBlock";
 import Section from "@/components/sections/Section";
 import { getProfile, getProjects, type Profile, type Project } from "@/lib/api";
@@ -21,12 +22,6 @@ const GALLERY_ITEMS = [
   { type: "image" as const, alt: "[PLACEHOLDER] Gallery image 6", year: "2021" },
 ];
 
-// Skills/clients for the marquee
-const SKILLS = [
-  "React", "TypeScript", "Motion Design", "Figma",
-  "Python", "FastAPI", "GSAP", "Tailwind",
-  "Product Strategy", "Design Systems", "3D", "Brand Identity",
-];
 
 export default function Home() {
   const [profile,  setProfile]  = useState<Profile | null>(null);
@@ -83,33 +78,20 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* 5. Marquee rows — two rows, opposite directions */}
+      {/* 5. Tool logos marquee — single row, left scroll */}
       <Section
         theme="dark"
-        style={{ padding: "2rem 0", borderBlock: "1px solid var(--color--dark-tint-2)" }}
+        style={{ padding: "2.5rem 0", borderBlock: "1px solid var(--color--dark-tint-2)" }}
       >
-        <MarqueeRow speed={28} direction="left">
-          {SKILLS.map((s) => (
-            <span
-              key={s}
-              className="text-eyebrow"
-              style={{ padding: "0 2rem", color: "var(--color--grey-1)", whiteSpace: "nowrap" }}
-            >
-              {s} ·
-            </span>
-          ))}
-        </MarqueeRow>
-        <div style={{ height: "0.5rem" }} />
-        <MarqueeRow speed={22} direction="right">
-          {SKILLS.slice().reverse().map((s) => (
-            <span
-              key={s}
-              className="text-eyebrow"
-              style={{ padding: "0 2rem", color: "var(--color--accent)", whiteSpace: "nowrap" }}
-            >
-              {s} ·
-            </span>
-          ))}
+        <p className="text-eyebrow" style={{
+          color: "var(--color--grey-2)",
+          textAlign: "center",
+          marginBottom: "1.5rem",
+        }}>
+          Tools & Software
+        </p>
+        <MarqueeRow speed={35} direction="left" pauseOnHover>
+          {ALL_TOOL_LOGOS}
         </MarqueeRow>
       </Section>
 

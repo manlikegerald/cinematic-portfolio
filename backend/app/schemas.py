@@ -43,6 +43,7 @@ class ProjectOut(BaseModel):
     tags: list[str]
     link_live: Optional[str]
     link_repo: Optional[str]
+    video_url: Optional[str] = None
 
     model_config = {"from_attributes": True}
 

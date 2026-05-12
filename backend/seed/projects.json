@@ -1,102 +1,105 @@
 [
   {
-    "slug": "project-one",
-    "title": "[PLACEHOLDER] Project One",
-    "year": 2024,
-    "type": "Web",
-    "role": "Design & Build",
-    "summary": "[PLACEHOLDER] One-sentence hook that makes someone want to click through.",
-    "cover": "/images/projects/project-one-cover.jpg",
-    "gallery": [
-      "/images/projects/p1-1.jpg",
-      "/images/projects/p1-2.jpg"
-    ],
-    "content": [
-      { "type": "paragraph", "value": "[PLACEHOLDER] Opening paragraph — set the scene. What was the problem, who was it for, what were the constraints?" },
-      { "type": "image", "src": "/images/projects/p1-1.jpg", "caption": "[PLACEHOLDER] Caption describing what this image shows." },
-      { "type": "paragraph", "value": "[PLACEHOLDER] Middle section — what you built, key decisions, what you learned." }
-    ],
-    "tags": ["react", "typescript", "design"],
-    "link_live": null,
-    "link_repo": null
-  },
-  {
-    "slug": "project-two",
-    "title": "[PLACEHOLDER] Project Two",
-    "year": 2024,
-    "type": "App",
-    "role": "Full-Stack",
-    "summary": "[PLACEHOLDER] One-sentence hook.",
-    "cover": "/images/projects/project-two-cover.jpg",
-    "gallery": [],
-    "content": [
-      { "type": "paragraph", "value": "[PLACEHOLDER] Project Two description." }
-    ],
-    "tags": ["python", "fastapi", "mobile"],
-    "link_live": null,
-    "link_repo": null
-  },
-  {
-    "slug": "project-three",
-    "title": "[PLACEHOLDER] Project Three",
+    "slug": "pharscare-twitter-campaign",
+    "title": "PharstCare — #1 Trending Campaign",
     "year": 2023,
-    "type": "Brand",
-    "role": "Design",
-    "summary": "[PLACEHOLDER] One-sentence hook.",
-    "cover": "/images/projects/project-three-cover.jpg",
+    "type": "Social Media",
+    "role": "Brand Influencer & Campaign Lead",
+    "summary": "Spearheaded a Twitter campaign for PharstCare's new package launch that trended at #1 on X (formerly Twitter).",
+    "cover": "/images/projects/pharscare-cover.jpg",
     "gallery": [],
     "content": [
-      { "type": "paragraph", "value": "[PLACEHOLDER] Project Three description." }
+      { "type": "paragraph", "value": "Led the full Twitter strategy for PharstCare's new package launch — crafting engaging tweets, threads, and polls that drove massive organic reach and pushed the campaign to trend at #1 on X (formerly Twitter)." },
+      { "type": "paragraph", "value": "Responsibilities included crafting engaging tweets and threads, pinning brand-related content for maximum visibility, retweeting and quoting followers who tagged the brand, collaborating with other influencers, and addressing negative comments professionally." }
     ],
-    "tags": ["figma", "branding", "identity"],
+    "tags": ["social media", "twitter", "brand strategy", "campaign"],
     "link_live": null,
     "link_repo": null
   },
   {
-    "slug": "project-four",
-    "title": "[PLACEHOLDER] Project Four",
+    "slug": "one-voice-choir-anniversary",
+    "title": "One Voice Choir — 20th Anniversary Concert",
     "year": 2023,
-    "type": "Web",
-    "role": "Front-End",
-    "summary": "[PLACEHOLDER] One-sentence hook.",
-    "cover": "/images/projects/project-four-cover.jpg",
+    "type": "Production",
+    "role": "Creative Director & Producer",
+    "summary": "Spearheaded the full publicity campaign and live production for a musical concert fused with a live podcast marking the choir's 20th anniversary.",
+    "cover": "/images/projects/choir-cover.jpg",
     "gallery": [],
     "content": [
-      { "type": "paragraph", "value": "[PLACEHOLDER] Project Four description." }
+      { "type": "paragraph", "value": "Directed and produced the entire publicity campaign for One Voice Choir Ghana's 20th anniversary — a milestone concert fused with a live podcast session." },
+      { "type": "paragraph", "value": "Deliverables included all print and digital marketing materials, social media content across Instagram, TikTok, Facebook and YouTube, and on-the-day video production and editing of short-form highlight content." }
     ],
-    "tags": ["react", "gsap", "animation"],
+    "tags": ["production", "graphic design", "social media", "video"],
     "link_live": null,
-    "link_repo": null
+    "link_repo": null,
+    "video_url": null
   },
   {
-    "slug": "project-five",
-    "title": "[PLACEHOLDER] Project Five",
+    "slug": "choir-music-video",
+    "title": "Music Video Production — Limited Budget",
     "year": 2022,
-    "type": "App",
-    "role": "Product & Engineering",
-    "summary": "[PLACEHOLDER] One-sentence hook.",
-    "cover": "/images/projects/project-five-cover.jpg",
+    "type": "Video",
+    "role": "Director & Producer",
+    "summary": "Directed and produced a full-quality music video for a choir from very limited resources — a testament to creative resourcefulness.",
+    "cover": "/images/projects/music-video-cover.jpg",
     "gallery": [],
     "content": [
-      { "type": "paragraph", "value": "[PLACEHOLDER] Project Five description." }
+      { "type": "paragraph", "value": "Directed and produced a standard music video for One Voice Choir Ghana under significant budget constraints. The project demanded creative resourcefulness — from location scouting and lighting to post-production in Adobe Premiere Pro and DaVinci Resolve." },
+      { "type": "paragraph", "value": "The final video achieved strong engagement across YouTube and social platforms, demonstrating that high production value is a function of creativity, not just budget." }
     ],
-    "tags": ["product", "data", "python"],
+    "tags": ["video production", "direction", "premiere pro", "davinci resolve"],
+    "link_live": null,
+    "link_repo": null,
+    "video_url": null
+  },
+  {
+    "slug": "bace-africa-brand",
+    "title": "BACE Africa — Brand & Social",
+    "year": 2022,
+    "type": "Brand",
+    "role": "Graphic Designer & Social Media Manager",
+    "summary": "Ongoing brand identity design, social media content, and digital marketing for BACE Africa.",
+    "cover": "/images/projects/bace-cover.jpg",
+    "gallery": [],
+    "content": [
+      { "type": "paragraph", "value": "Working remotely with BACE Africa since December 2022, delivering consistent brand identity design, social media templates, and digital marketing materials." },
+      { "type": "paragraph", "value": "Work spans brochures, banners, pitch decks, and social media content across Instagram, TikTok, Facebook and YouTube. Also managed paid campaigns (Meta Ads) with limited monthly budgets, delivering an average ROAS of 4.2x." }
+    ],
+    "tags": ["brand identity", "figma", "illustrator", "social media"],
     "link_live": null,
     "link_repo": null
   },
   {
-    "slug": "project-six",
-    "title": "[PLACEHOLDER] Project Six",
-    "year": 2021,
-    "type": "Brand",
-    "role": "Art Direction",
-    "summary": "[PLACEHOLDER] One-sentence hook.",
-    "cover": "/images/projects/project-six-cover.jpg",
+    "slug": "houndle-design",
+    "title": "Houndle — Remote Design",
+    "year": 2022,
+    "type": "Web",
+    "role": "Graphic Designer",
+    "summary": "Remote graphic design and digital marketing work for Houndle, a UK-based client.",
+    "cover": "/images/projects/houndle-cover.jpg",
     "gallery": [],
     "content": [
-      { "type": "paragraph", "value": "[PLACEHOLDER] Project Six description." }
+      { "type": "paragraph", "value": "Collaborated remotely with the Houndle team in the United Kingdom, delivering graphic design and digital marketing assets since December 2022." },
+      { "type": "paragraph", "value": "Work included print and digital marketing materials, social media templates, and visual content designed to meet UK market standards." }
     ],
-    "tags": ["illustration", "brand"],
+    "tags": ["graphic design", "digital marketing", "remote"],
+    "link_live": null,
+    "link_repo": null
+  },
+  {
+    "slug": "asset-library-system",
+    "title": "In-House Asset Library & Template System",
+    "year": 2023,
+    "type": "Design Systems",
+    "role": "Lead Designer",
+    "summary": "Built an in-house asset library and template system that reduced content production costs by 22%.",
+    "cover": "/images/projects/asset-library-cover.jpg",
+    "gallery": [],
+    "content": [
+      { "type": "paragraph", "value": "Identified inefficiencies in the content production workflow and built a comprehensive in-house asset library and reusable template system in Figma and Canva Pro." },
+      { "type": "paragraph", "value": "The system reduced content production costs by 22%, cut turnaround time significantly, and ensured visual consistency across all client-facing materials." }
+    ],
+    "tags": ["figma", "canva", "design systems", "workflow"],
     "link_live": null,
     "link_repo": null
   }

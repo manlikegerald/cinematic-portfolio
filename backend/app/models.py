@@ -36,6 +36,7 @@ class ProjectModel(Base):
     tags: Mapped[list] = mapped_column(JSON, default=list)
     link_live: Mapped[Optional[str]] = mapped_column(String(500), nullable=True)
     link_repo: Mapped[Optional[str]] = mapped_column(String(500), nullable=True)
+    video_url: Mapped[Optional[str]] = mapped_column(String(500), nullable=True)
 
 
 class TimelineModel(Base):

@@ -168,7 +168,7 @@ export default function Nav() {
                       fontSize: "clamp(2.5rem, 8vw, 5rem)",
                       fontWeight: 800,
                       fontFamily: "var(--font--display)",
-                      fontStyle: "italic",
+                      fontStyle: "normal",
                       lineHeight: 1,
                       color: "var(--color--off-white)",
                     }}

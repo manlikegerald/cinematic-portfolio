@@ -1,15 +1,14 @@
 {
-  "name": "{{YOUR_NAME}}",
-  "tagline": "{{YOUR_TAGLINE}}",
-  "bio_short": "[PLACEHOLDER] One or two punchy sentences about who you are and what you do.",
-  "bio_long": "[PLACEHOLDER] A fuller narrative — your background, what drives you, the kind of problems you love solving, and where you want to go next. Write in your own voice.",
-  "location": "[PLACEHOLDER] City, Country",
+  "name": "Gerald Adjeman-Cofie",
+  "tagline": "Graphic Designer · Video Editor · Social Media Strategist",
+  "bio_short": "Creative multimedia professional with 5+ years of experience in graphic design, video production, and digital marketing — passionate about solving problems through beautiful design and visual storytelling.",
+  "bio_long": "I'm a creative and results-driven multimedia professional based in Tema, Ghana, with 5+ years of experience spanning graphic design, video production, social media management, and digital marketing. I'm passionate about digital design and art direction, and enjoy solving problems through beautiful designs and experiences with agencies and enthusiastic people. I have a track record of building brand identities, growing engaged online communities, and delivering measurable ROI through compelling visual storytelling — including a Twitter campaign that trended at #1. I'm adept at managing multi-channel campaigns from concept to execution, and I bring the same creative energy whether I'm designing a brand identity, directing a music video, or optimising a paid social campaign.",
+  "location": "Tema, Ghana",
   "socials": [
-    { "label": "email",    "href": "mailto:{{YOUR_EMAIL}}" },
-    { "label": "linkedin", "href": "https://linkedin.com/in/{{YOUR_HANDLE}}" },
-    { "label": "github",   "href": "https://github.com/{{YOUR_HANDLE}}" },
-    { "label": "twitter",  "href": "https://twitter.com/{{YOUR_HANDLE}}" }
+    { "label": "email",    "href": "mailto:adjemancofiegerald@gmail.com" },
+    { "label": "linkedin", "href": "https://www.linkedin.com/in/gerald-adjeman-cofie-bb2307216" },
+    { "label": "github",   "href": "https://github.com/manlikegerald" }
   ],
-  "currently": "Building a cinematic portfolio site",
-  "next": "Open to new projects · Q3 2026"
+  "currently": "MDG Consultant for Africa at Wilmar Africa LTD",
+  "next": "Open to new design & brand projects · 2026"
 }

@@ -2,15 +2,15 @@
 // All components import from here; nothing is hardcoded.
 
 export const SITE = {
-  name: "{{YOUR_NAME}}", // [PLACEHOLDER] e.g. "Alex Rivera"
-  initials: "{{INITIALS}}", // [PLACEHOLDER] e.g. "AR"
-  tagline: "{{YOUR_TAGLINE}}", // [PLACEHOLDER] e.g. "Product Designer & Front-End Engineer"
-  location: "{{YOUR_LOCATION}}", // [PLACEHOLDER] e.g. "London, UK"
-  since: "{{SINCE_YEAR}}", // [PLACEHOLDER] e.g. "2018"
+  name: "Gerald Adjeman-Cofie",
+  initials: "GA",
+  tagline: "Graphic Designer · Video Editor · Social Media Strategist",
+  location: "Tema, Ghana",
+  since: "2018",
   bio_short:
-    "{{YOUR_SHORT_BIO}}", // [PLACEHOLDER] 1–2 sentences
-  currently: "Building a cinematic portfolio site", // [PLACEHOLDER]
-  next: "Open to new projects · Q3 2026", // [PLACEHOLDER]
+    "Creative multimedia professional with 5+ years of experience in graphic design, video production, and digital marketing.",
+  currently: "MDG Consultant for Africa at Wilmar Africa LTD",
+  next: "Open to new design & brand projects · 2026",
 
   // Hero background mode: "shader" | "image" | "solid"
   heroBackground: "image" as "shader" | "image" | "solid",
@@ -23,15 +23,14 @@ export const SITE = {
   ],
 
   socials: [
-    { label: "email", href: "mailto:{{YOUR_EMAIL}}" }, // [PLACEHOLDER]
-    { label: "linkedin", href: "https://linkedin.com/in/{{YOUR_HANDLE}}" }, // [PLACEHOLDER]
-    { label: "github", href: "https://github.com/{{YOUR_HANDLE}}" }, // [PLACEHOLDER]
-    { label: "twitter", href: "https://twitter.com/{{YOUR_HANDLE}}" }, // [PLACEHOLDER]
+    { label: "email",    href: "mailto:adjemancofiegerald@gmail.com" },
+    { label: "linkedin", href: "https://www.linkedin.com/in/gerald-adjeman-cofie-bb2307216" },
+    { label: "github",   href: "https://github.com/manlikegerald" },
   ],
 
-  // OnOffSplit section labels — rename freely
-  splitLeft: { label: "BUILD", sub: "Design & Engineering" },
-  splitRight: { label: "SHARE", sub: "Writing & Speaking" },
+  // OnOffSplit section labels
+  splitLeft:  { label: "DESIGN", sub: "Brand & Visual Identity" },
+  splitRight: { label: "CREATE", sub: "Video & Social Media" },
 
   // Backend API origin (Vite proxy handles /api in dev, override for prod)
   apiBase: "/api",

@@ -4,6 +4,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SplitText from "@/components/primitives/SplitText";
 import ArrowButton from "@/components/primitives/ArrowButton";
+import VideoPlayer from "@/components/primitives/VideoPlayer";
 import { getProject, getProjects, type Project } from "@/lib/api";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -115,6 +116,20 @@ export default function WorkDetail() {
           </svg>
         )}
       </div>
+
+      {/* Video player — shown when project has a video_url */}
+      {project.video_url && (
+        <div className="container" style={{ marginBottom: "4rem" }}>
+          <p className="text-eyebrow" style={{ color: "var(--color--grey-2)", marginBottom: "1rem" }}>
+            Watch
+          </p>
+          <VideoPlayer
+            url={project.video_url}
+            poster={project.cover || undefined}
+            title={project.title}
+          />
+        </div>
+      )}
 
       {/* Rich content body */}
       <div className="container" style={{ maxWidth: "800px", marginBottom: "6rem" }}>

@@ -142,7 +142,7 @@ export default function HorizontalScroll({ items }: Props) {
             >
               <p
                 className="text-impact-reg-brier"
-                style={{ fontSize: "clamp(1.5rem, 2.5vw, 2.25rem)", fontStyle: "italic", marginBottom: "1rem" }}
+                style={{ fontSize: "clamp(1.5rem, 2.5vw, 2.25rem)", fontStyle: "normal", marginBottom: "1rem" }}
               >
                 "{item.quote}"
               </p>

@@ -10,7 +10,7 @@ export const THEME = {
   // Display font — swap the family string to change globally.
   // Pair: fonts.display is for headlines, fonts.body for UI/copy.
   fonts: {
-    display: "'Fraunces', Georgia, serif", // swap to 'Editorial New' if licensed
+    display: "'Affigue', Georgia, serif",
     body: "'Mona Sans', 'Inter', system-ui, sans-serif",
   },
 

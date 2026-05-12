@@ -17,7 +17,7 @@
   --color--grey-2: #7a7a7a;
 
   /* === TYPOGRAPHY === */
-  --font--display: 'Fraunces', Georgia, serif; /* swap in theme.ts */
+  --font--display: 'Affigue', Georgia, serif;
   --font--body: 'Mona Sans', 'Inter', system-ui, sans-serif;
 
   /* === MOTION — lifted verbatim from landonorris.com === */

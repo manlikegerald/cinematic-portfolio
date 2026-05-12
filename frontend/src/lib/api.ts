@@ -43,6 +43,7 @@ export interface Project {
   tags: string[];
   link_live: string | null;
   link_repo: string | null;
+  video_url: string | null;
 }
 
 export interface TimelineItem {

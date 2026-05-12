@@ -108,7 +108,7 @@ export default function OnOffSplit({ left, right }: Props) {
         </p>
         <h2
           className="text-impact-reg-brier"
-          style={{ marginBottom: "1.5rem", color: "var(--color--black)", fontStyle: "italic" }}
+          style={{ marginBottom: "1.5rem", color: "var(--color--black)", fontStyle: "normal" }}
         >
           {right.label}
         </h2>
