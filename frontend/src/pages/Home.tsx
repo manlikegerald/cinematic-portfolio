@@ -14,7 +14,7 @@ import { SITE } from "@/config/site";
 const GALLERY_ITEMS = [
   { type: "image" as const, src: "/images/gallery/independence-day.jpg", alt: "One Voice Choir — Ghana Independence Day poster", year: "2024" },
   { type: "text" as const, quote: "It's not about the destination, it's about what you build on the way.", credit: "— [PLACEHOLDER]" },
-  { type: "image" as const, alt: "[PLACEHOLDER] Gallery image 2", year: "2023" },
+  { type: "image" as const, src: "/images/gallery/bace-digital-marketing.jpg", alt: "BACE Africa — Digital Marketing Solutions", year: "2023" },
   { type: "image" as const, alt: "[PLACEHOLDER] Gallery image 3", year: "2023" },
   { type: "text" as const, quote: "Good design is invisible. Great design is unforgettable.", credit: "— [PLACEHOLDER]" },
   { type: "image" as const, alt: "[PLACEHOLDER] Gallery image 4", year: "2022" },
