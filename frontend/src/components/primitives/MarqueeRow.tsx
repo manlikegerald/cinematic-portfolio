@@ -96,8 +96,8 @@ export default function MarqueeRow({
           }}
         >
           {/* Duplicate content so the loop is seamless */}
-          <div style={{ display: "flex", flexShrink: 0 }}>{children}</div>
-          <div style={{ display: "flex", flexShrink: 0 }} aria-hidden="true">{children}</div>
+          <div style={{ display: "flex", flexShrink: 0, alignItems: "center" }}>{children}</div>
+          <div style={{ display: "flex", flexShrink: 0, alignItems: "center" }} aria-hidden="true">{children}</div>
         </div>
       </div>
     </>

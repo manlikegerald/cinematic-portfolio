@@ -81,7 +81,7 @@ export default function Home() {
       {/* 5. Tool logos marquee — single row, left scroll */}
       <Section
         theme="dark"
-        style={{ padding: "2.5rem 0", borderBlock: "1px solid var(--color--dark-tint-2)" }}
+        style={{ padding: "4rem 0", borderBlock: "1px solid var(--color--dark-tint-2)" }}
       >
         <p className="text-eyebrow" style={{
           color: "var(--color--grey-2)",

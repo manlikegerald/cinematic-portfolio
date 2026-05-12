@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Section from "@/components/sections/Section";
+import AnimatedBackground from "@/components/primitives/AnimatedBackground";
 import SplitText from "@/components/primitives/SplitText";
 import MarqueeRow from "@/components/primitives/MarqueeRow";
 import HighlightLine from "@/components/primitives/HighlightLine";
@@ -74,9 +75,20 @@ export default function About() {
     <>
       <Section
         theme="dark"
-        style={{ paddingTop: "calc(var(--nav-height) + 4rem)", paddingBottom: "var(--section-padding)" }}
+        style={{ paddingTop: "calc(var(--nav-height) + 4rem)", paddingBottom: "var(--section-padding)", position: "relative", overflow: "hidden" }}
       >
-        <div className="container">
+        <div style={{
+          position: "absolute",
+          inset: 0,
+          height: "70%",
+          WebkitMaskImage: "linear-gradient(to bottom, black 40%, transparent 100%)",
+          maskImage: "linear-gradient(to bottom, black 40%, transparent 100%)",
+          opacity: 0.15,
+          pointerEvents: "none",
+        }}>
+          <AnimatedBackground />
+        </div>
+        <div className="container" style={{ position: "relative", zIndex: 1 }}>
           {/* Split: portrait + bio */}
           <div
             style={{
