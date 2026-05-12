@@ -101,6 +101,18 @@ export default function Hero({ profile }: Props) {
           {tagline} · Since {SITE.since}
         </p>
 
+        <p style={{
+          fontFamily: "var(--font--body)",
+          fontSize: "clamp(0.7rem, 1.2vw, 1rem)",
+          fontWeight: 800,
+          letterSpacing: "0.35em",
+          textTransform: "uppercase",
+          color: "var(--color--grey-2)",
+          marginBottom: "0.75rem",
+        }}>
+          Portfolio
+        </p>
+
         <SplitText
           as="h1"
           split="words"
