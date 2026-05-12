@@ -121,7 +121,7 @@ export default function Hero({ profile }: Props) {
           delay={0.2}
           start="top 100%"
           className="text-impact-reg-brier"
-          style={{ color: "var(--color--white)", marginBottom: "2.5rem", fontStyle: "normal" }}
+          style={{ color: "var(--color--white)", marginBottom: "2.5rem", fontStyle: "normal", whiteSpace: "nowrap" }}
         >
           {name}
         </SplitText>
