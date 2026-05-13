@@ -126,7 +126,19 @@ export default function WorkDetail() {
         {project.content.map((block, i) => {
           if (block.type === "paragraph") {
             return (
-              <p key={i} className="text-body-reg-mona" style={{ marginBottom: "1.5rem", color: "var(--color--off-white)" }}>
+              <p
+                key={i}
+                className="text-body-reg-mona"
+                style={{
+                  marginBottom: "1.75rem",
+                  color: "var(--color--off-white)",
+                  fontSize: "clamp(1.1rem, 1.8vw, 1.35rem)",
+                  lineHeight: 1.85,
+                  textAlign: "center",
+                  maxWidth: "900px",
+                  marginInline: "auto",
+                }}
+              >
                 {block.value}
               </p>
             );

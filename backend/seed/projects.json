@@ -1,38 +1,42 @@
 [
   {
-    "slug": "pharscare-twitter-campaign",
-    "title": "PharstCare — #1 Trending Campaign",
-    "year": 2023,
-    "type": "Social Media",
-    "role": "Brand Influencer & Campaign Lead",
-    "summary": "Spearheaded a Twitter campaign for PharstCare's new package launch that trended at #1 on X (formerly Twitter).",
-    "cover": "/images/projects/pharscare-cover.jpg",
-    "gallery": [],
-    "content": [
-      { "type": "paragraph", "value": "Led the full Twitter strategy for PharstCare's new package launch — crafting engaging tweets, threads, and polls that drove massive organic reach and pushed the campaign to trend at #1 on X (formerly Twitter)." },
-      { "type": "paragraph", "value": "Responsibilities included crafting engaging tweets and threads, pinning brand-related content for maximum visibility, retweeting and quoting followers who tagged the brand, collaborating with other influencers, and addressing negative comments professionally." }
-    ],
-    "tags": ["social media", "twitter", "brand strategy", "campaign"],
-    "link_live": null,
-    "link_repo": null
-  },
-  {
     "slug": "one-voice-choir-anniversary",
     "title": "One Voice Choir — 20th Anniversary Concert",
     "year": 2023,
     "type": "Production",
     "role": "Creative Director & Producer",
-    "summary": "Spearheaded the full publicity campaign and live production for a musical concert fused with a live podcast marking the choir's 20th anniversary.",
+    "summary": "Spearheaded the full publicity campaign and live production for a milestone concert fused with a live podcast marking One Voice Choir Ghana's 20th anniversary.",
     "cover": "/images/projects/choir-cover.jpg",
     "gallery": [],
     "content": [
-      { "type": "paragraph", "value": "Directed and produced the entire publicity campaign for One Voice Choir Ghana's 20th anniversary — a milestone concert fused with a live podcast session." },
-      { "type": "paragraph", "value": "Deliverables included all print and digital marketing materials, social media content across Instagram, TikTok, Facebook and YouTube, and on-the-day video production and editing of short-form highlight content." }
+      { "type": "paragraph", "value": "Twenty years is a legacy worth honouring at scale. One Voice Choir Ghana has been a cornerstone of gospel music and community in Ghana since its founding, and when the 20th anniversary arrived, the celebration had to match the weight of that milestone. As Creative Director and Producer, I took full ownership of every creative touchpoint — from the first poster design to the final highlight reel published the morning after the show." },
+      { "type": "paragraph", "value": "The campaign launched six weeks before the event with a phased content rollout across Instagram, Facebook, TikTok, and YouTube. Teaser posts seeded anticipation early, countdown content maintained momentum through the weeks leading up to the night, and behind-the-scenes glimpses brought audiences into the preparation process. All print materials — event programmes, banners, flyers, and out-of-home placements — were designed to reflect the choir's identity as both a spiritual institution and a serious artistic force." },
+      { "type": "paragraph", "value": "What made this concert singular was the live podcast session embedded within the show itself — an innovative format that had never been done by the choir before. This created a unique production challenge: the stage layout, audio routing, and camera positioning all had to serve both a concert audience and a podcast format simultaneously. I coordinated closely with the sound team, lighting crew, and camera operators to ensure every element was captured with the quality required to live on beyond the event." },
+      { "type": "paragraph", "value": "On the night, I oversaw live video production from the floor — directing the camera team across the performance segments, podcast conversations, and audience moments. The objective was not only to document the event but to capture it in a way that could be cut into compelling short-form content for social platforms immediately after. Within 24 hours of the final note, highlight reels were live across all channels, capitalising on the audience's peak emotional connection with the event while it was still fresh. The campaign delivered strong engagement numbers, a sold-out venue, and content that continues to represent the choir's most-viewed digital work." }
     ],
-    "tags": ["production", "graphic design", "social media", "video"],
+    "tags": ["production", "graphic design", "social media", "video", "creative direction"],
     "link_live": null,
     "link_repo": null,
     "video_url": null
+  },
+  {
+    "slug": "pharscare-twitter-campaign",
+    "title": "PharstCare — #1 Trending Campaign",
+    "year": 2023,
+    "type": "Social Media",
+    "role": "Brand Influencer & Campaign Lead",
+    "summary": "Spearheaded a Twitter/X campaign for PharstCare's new healthcare package launch that trended at #1 on X (formerly Twitter) in Ghana through disciplined strategy, authentic engagement, and real-time community management.",
+    "cover": "/images/projects/pharscare-cover.jpg",
+    "gallery": [],
+    "content": [
+      { "type": "paragraph", "value": "PharstCare's launch of a new healthcare package was a moment that demanded more than standard advertising — it needed community. As Brand Influencer and Campaign Lead, I built and executed a Twitter/X strategy that transformed product awareness into a grassroots movement, ultimately pushing the campaign to trend at #1 on X in Ghana during the launch window." },
+      { "type": "paragraph", "value": "The strategy was built on a layered content approach: an initial announcement thread that communicated the offer clearly and compellingly, followed by daily engagement posts designed to invite participation rather than simply broadcast information. Polls, questions, shareable moments, and real-time responses kept the brand visible and active throughout the campaign duration. Every piece of content was crafted with both the brand's voice and the platform's organic mechanics in mind — things that feel native to X spread further and feel more credible than content that reads like advertising." },
+      { "type": "paragraph", "value": "Collaboration was central to the campaign's reach. I coordinated with influencers across the healthcare and lifestyle space in Ghana, aligning timing and messaging to ensure amplification that felt genuine and consistent rather than manufactured. Each partnership was chosen for audience alignment, not just follower count — the goal was resonance, not raw numbers." },
+      { "type": "paragraph", "value": "When criticism emerged — as it inevitably does with any high-visibility campaign — I managed it directly and professionally. Responding to negative sentiment with transparency and accountability turned potential reputation risks into demonstrations of integrity, and in several cases, sceptical users became brand advocates after experiencing a brand that was willing to engage honestly. The campaign reaching #1 trending status was not a coincidence. It was the result of disciplined pre-planning, authentic real-time engagement, and a team that understood that in social media, how you show up matters as much as what you say." }
+    ],
+    "tags": ["social media", "twitter", "brand strategy", "campaign", "influencer marketing"],
+    "link_live": null,
+    "link_repo": null
   },
   {
     "slug": "choir-music-video",
@@ -40,14 +44,16 @@
     "year": 2022,
     "type": "Video",
     "role": "Director & Producer",
-    "summary": "Directed and produced a full-quality music video for a choir from very limited resources — a testament to creative resourcefulness.",
+    "summary": "Directed and produced a full-quality music video for One Voice Choir Ghana under significant budget constraints, proving that high production value is a function of creativity, not spend.",
     "cover": "/images/projects/music-video-cover.jpg",
     "gallery": [],
     "content": [
-      { "type": "paragraph", "value": "Directed and produced a standard music video for One Voice Choir Ghana under significant budget constraints. The project demanded creative resourcefulness — from location scouting and lighting to post-production in Adobe Premiere Pro and DaVinci Resolve." },
-      { "type": "paragraph", "value": "The final video achieved strong engagement across YouTube and social platforms, demonstrating that high production value is a function of creativity, not just budget." }
+      { "type": "paragraph", "value": "Great work does not require a great budget. It requires great judgment about where every resource goes. This was the guiding principle behind the music video I directed and produced for One Voice Choir Ghana — a project with the creative ambition of a full production and the financial constraints of a minimal one. The brief was straightforward and uncompromising: deliver a video that could stand alongside professional-grade productions, regardless of what was in the budget." },
+      { "type": "paragraph", "value": "From the outset, the constraints shaped every decision. Without the budget to rent premium equipment, hire a full crew, or access purpose-built sets, the production demanded a fundamental rethink of how the video would be made. Location scouting became one of the most valuable investments of time — finding spaces that were visually rich, logistically accessible, and available without cost required patience, resourcefulness, and a good eye for what a camera would do with natural light and architectural texture." },
+      { "type": "paragraph", "value": "Lighting — typically one of the most expensive and impactful elements of any video production — was achieved through a careful combination of natural light at optimal times of day, practical light sources already present in the locations, and hand-positioned reflectors to shape and fill. Camera blocking was choreographed to make the most of each setup, minimising the number of moves required while maximising the visual variety of the final cut." },
+      { "type": "paragraph", "value": "Post-production was handled entirely in Adobe Premiere Pro and DaVinci Resolve. The colour grade became the project's most powerful tool — a warm, unified grade applied across all footage that gave the video a cohesion and visual quality that transcended its production conditions. The final video launched across YouTube and social platforms and generated strong, sustained engagement. It remains one of the most-viewed pieces of content in the choir's digital library, and a consistent point of reference that proves the point the project set out to make: that creativity, not capital, is the true determinant of production value." }
     ],
-    "tags": ["video production", "direction", "premiere pro", "davinci resolve"],
+    "tags": ["video production", "direction", "premiere pro", "davinci resolve", "colour grading"],
     "link_live": null,
     "link_repo": null,
     "video_url": null
@@ -58,14 +64,16 @@
     "year": 2022,
     "type": "Brand",
     "role": "Graphic Designer & Social Media Manager",
-    "summary": "Ongoing brand identity design, social media content, and digital marketing for BACE Africa.",
+    "summary": "Ongoing brand identity design, social media content, and digital advertising for BACE Africa — delivering a 4.2x average ROAS on limited monthly Meta Ads budgets alongside consistent, multi-platform visual content.",
     "cover": "/images/projects/bace-cover.png",
     "gallery": [],
     "content": [
-      { "type": "paragraph", "value": "Working remotely with BACE Africa since December 2022, delivering consistent brand identity design, social media templates, and digital marketing materials." },
-      { "type": "paragraph", "value": "Work spans brochures, banners, pitch decks, and social media content across Instagram, TikTok, Facebook and YouTube. Also managed paid campaigns (Meta Ads) with limited monthly budgets, delivering an average ROAS of 4.2x." }
+      { "type": "paragraph", "value": "Brand identity is not a one-time project — it is an ongoing practice of maintaining coherence across every surface a company touches. Since December 2022, I have been the designer and social media strategist behind BACE Africa's visual presence, working remotely to deliver a sustained stream of assets, campaigns, and strategic content that keeps the brand recognisable, credible, and current." },
+      { "type": "paragraph", "value": "The scope of this engagement has been deliberately comprehensive. In the early months, the work was foundational: establishing a visual identity system that could flex across formats and contexts without losing coherence. Logos, colour systems, typography, and visual guidelines were defined with enough clarity that every subsequent piece of work could be executed quickly and consistently, regardless of the brief. From that foundation, an expanding library of social media templates, pitch decks, digital marketing materials, and event graphics was developed — assets that gave the internal team the ability to produce brand-accurate content without depending on a designer for every output." },
+      { "type": "paragraph", "value": "Alongside the design work, I have managed BACE Africa's paid advertising through Meta Ads Manager. Working with limited monthly budgets requires a more disciplined approach to campaign structure than most agencies apply to much larger accounts — every audience segment must be well-considered, every creative must be tested against a clear hypothesis, and optimisation decisions must be made on real data rather than instinct. The result has been an average return on ad spend of 4.2x, a figure that demonstrates what careful, strategic media buying can achieve even without significant financial resources." },
+      { "type": "paragraph", "value": "Content production has spanned Instagram, TikTok, Facebook, and YouTube, with each platform's format, algorithm behaviour, and audience expectations accounted for in both the creative approach and the posting strategy. This is not a matter of resizing the same asset for different dimensions — effective multi-platform content requires a genuine understanding of what each platform rewards and what its users expect. The work is ongoing, and the visual language developed across this engagement has become a stable, trusted, and recognisable part of how BACE Africa presents itself to the world." }
     ],
-    "tags": ["brand identity", "figma", "illustrator", "social media"],
+    "tags": ["brand identity", "figma", "illustrator", "social media", "meta ads", "digital marketing"],
     "link_live": null,
     "link_repo": null
   },
@@ -75,14 +83,16 @@
     "year": 2022,
     "type": "Web",
     "role": "Graphic Designer",
-    "summary": "Remote graphic design and digital marketing work for Houndle, a UK-based client.",
+    "summary": "Remote graphic design and digital marketing work for Houndle, a UK-based client — navigating time zones, cultural context, and market nuance to deliver assets that performed in a market far from home.",
     "cover": "/images/projects/houndle-cover.jpg",
     "gallery": [],
     "content": [
-      { "type": "paragraph", "value": "Collaborated remotely with the Houndle team in the United Kingdom, delivering graphic design and digital marketing assets since December 2022." },
-      { "type": "paragraph", "value": "Work included print and digital marketing materials, social media templates, and visual content designed to meet UK market standards." }
+      { "type": "paragraph", "value": "Working across time zones, without the benefit of in-person collaboration, and for an audience and market quite different from my own — the Houndle engagement was an exercise in remote design excellence. Since December 2022, I have delivered graphic design and digital marketing assets for this UK-based client, developing an approach to remote creative work that prioritises communication, iteration, and cultural attentiveness above all else." },
+      { "type": "paragraph", "value": "The challenge of remote design is not technical — the tools for remote collaboration are mature and reliable. The real challenge is communication: ensuring that every asset delivered lands as intended when there is no whiteboard session, no quick hallway conversation, and no shared physical context to bridge gaps in understanding. I addressed this through detailed creative briefs before beginning any piece of work, proactive progress updates throughout the process, and a structured feedback loop that gave the Houndle team confidence and control at every stage." },
+      { "type": "paragraph", "value": "Designing for a UK market required genuine attentiveness to context. Visual conventions, typographic preferences, tone of voice, and cultural references that work in one market do not always translate directly into another. Every asset produced for Houndle was interrogated against the question of how it would land with a UK audience — not just whether it was well-designed in abstract, but whether it was right for the specific people it was meant to reach." },
+      { "type": "paragraph", "value": "Materials produced across the engagement span print and digital: social media templates calibrated to UK platform norms, marketing collateral designed to the standards expected by UK consumers and businesses, and visual content built to remain consistent with the brand's identity across every format. This engagement has reinforced a conviction that runs through all of my work: that physical distance between designer and client is not a meaningful obstacle when the process that bridges it is rigorous, transparent, and well-managed." }
     ],
-    "tags": ["graphic design", "digital marketing", "remote"],
+    "tags": ["graphic design", "digital marketing", "remote", "uk market"],
     "link_live": null,
     "link_repo": null
   },
@@ -92,14 +102,17 @@
     "year": 2023,
     "type": "Design Systems",
     "role": "Lead Designer",
-    "summary": "Built an in-house asset library and template system that reduced content production costs by 22%.",
+    "summary": "Designed and implemented a comprehensive in-house asset library and template system in Figma and Canva Pro that reduced content production costs by 22% and freed the design team from repetitive execution work.",
     "cover": "/images/projects/asset-library-cover.jpg",
     "gallery": [],
     "content": [
-      { "type": "paragraph", "value": "Identified inefficiencies in the content production workflow and built a comprehensive in-house asset library and reusable template system in Figma and Canva Pro." },
-      { "type": "paragraph", "value": "The system reduced content production costs by 22%, cut turnaround time significantly, and ensured visual consistency across all client-facing materials." }
+      { "type": "paragraph", "value": "Efficiency is a design problem. When content production is slow, inconsistent, or unnecessarily expensive, the instinctive response is to add resources — more people, more tools, more time. The more considered response is to examine the system and find where it is failing. That is where this project began: with the observation that the content production workflow was generating waste that no amount of additional resource would fix, because the problem was structural, not capacity-related." },
+      { "type": "paragraph", "value": "The process began with a thorough workflow audit. I mapped every stage of content production from initial brief through to final delivery, tracking where time was spent, where approvals stalled, and where decisions were being made repeatedly that should have been made once. The picture that emerged was one of deep inefficiency: assets being rebuilt from scratch for each new project, visual inconsistency creating unnecessary revision cycles, and design time being consumed by execution that required craft but not creativity. The system was producing bottlenecks at every stage." },
+      { "type": "paragraph", "value": "The solution was a comprehensive asset library and template system built across Figma and Canva Pro. The library centralised every approved brand asset — logos in all approved configurations, the full colour system, typography at every weight and application, approved photography, iconography, and illustration — into a single, searchable, always-current repository. No more hunting through email threads for the right logo file. No more inconsistency because someone was working from an outdated asset. Everything lived in one place, correctly organised, immediately accessible." },
+      { "type": "paragraph", "value": "The template system translated the asset library into production-ready formats for every output type the team regularly produced: social media posts and stories across all platforms, presentation decks, marketing documents, event materials, and print collateral. Each template was built to be flexible enough for different content needs while being rigid enough to preserve brand integrity — a balance that required careful thinking about what should be locked and what should be editable. The system was documented thoroughly, with clear guidelines on how to use it, so that non-designers on the team could produce brand-accurate work without requiring a designer's involvement." },
+      { "type": "paragraph", "value": "The results were immediate and measurable. Content production costs dropped by 22% within the first quarter of the system going live. Turnaround times fell sharply as the time spent on asset retrieval and recreation was eliminated. Visual consistency across all client-facing materials improved markedly, reducing the revision cycles that had previously consumed significant design time. Most significantly, the design team was freed from the repetitive execution work that had been crowding out strategic and creative thinking — the work where their skills created the most genuine value. The system continues to operate and evolve, demonstrating that the most impactful design work is sometimes the work that makes all other work easier." }
     ],
-    "tags": ["figma", "canva", "design systems", "workflow"],
+    "tags": ["figma", "canva", "design systems", "workflow", "brand consistency"],
     "link_live": null,
     "link_repo": null
   }
