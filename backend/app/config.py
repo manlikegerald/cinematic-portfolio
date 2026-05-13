@@ -7,6 +7,10 @@ class Settings(BaseSettings):
     database_url: str = "sqlite+aiosqlite:///./portfolio.db"
     allowed_origins: str = "http://localhost:5173,http://localhost:4173"
 
+    # Admin auth
+    admin_password: str = "admin123"
+    secret_key: str = "changeme-secret-key-please-update-in-env"
+
     # SMTP — all optional; contact form silently skips emailing if unset
     smtp_host: str = ""
     smtp_port: int = 587
