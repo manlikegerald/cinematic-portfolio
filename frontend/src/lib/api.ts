@@ -1,8 +1,11 @@
 import { SITE } from "@/config/site";
 
 // Generic fetch wrapper — adds base URL, JSON headers, error handling.
+// cache: "no-store" ensures the browser never serves a cached API response,
+// so admin updates are immediately visible on the portfolio side.
 async function request<T>(path: string, options?: RequestInit): Promise<T> {
   const res = await fetch(`${SITE.apiBase}${path}`, {
+    cache: "no-store",
     headers: { "Content-Type": "application/json" },
     ...options,
   });

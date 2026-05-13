@@ -1,5 +1,5 @@
 from contextlib import asynccontextmanager
-from fastapi import FastAPI
+from fastapi import FastAPI, Request, Response
 from fastapi.middleware.cors import CORSMiddleware
 from app.config import settings
 from app.db import create_tables
@@ -26,6 +26,13 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+
+@app.middleware("http")
+async def no_cache(request: Request, call_next) -> Response:
+    response = await call_next(request)
+    response.headers["Cache-Control"] = "no-store"
+    return response
 
 # Public API routes
 app.include_router(profile.router,  prefix="/api", tags=["profile"])
