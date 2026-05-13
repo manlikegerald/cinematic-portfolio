@@ -117,22 +117,8 @@ export default function WorkDetail() {
         )}
       </div>
 
-      {/* Video player — shown when project has a video_url */}
-      {project.video_url && (
-        <div className="container" style={{ marginBottom: "4rem" }}>
-          <p className="text-eyebrow" style={{ color: "var(--color--grey-2)", marginBottom: "1rem" }}>
-            Watch
-          </p>
-          <VideoPlayer
-            url={project.video_url}
-            poster={project.cover || undefined}
-            title={project.title}
-          />
-        </div>
-      )}
-
       {/* Rich content body */}
-      <div className="container" style={{ maxWidth: "800px", marginBottom: "6rem" }}>
+      <div className="container" style={{ maxWidth: "800px", marginBottom: "4rem" }}>
         {project.content.map((block, i) => {
           if (block.type === "paragraph") {
             return (
@@ -155,6 +141,20 @@ export default function WorkDetail() {
           }
           return null;
         })}
+
+        {/* Video player — after description, constrained to content width */}
+        {project.video_url && (
+          <div style={{ marginTop: "3rem", marginBottom: "2rem", maxWidth: 560 }}>
+            <p className="text-eyebrow" style={{ color: "var(--color--grey-2)", marginBottom: "1rem" }}>
+              Watch
+            </p>
+            <VideoPlayer
+              url={project.video_url}
+              poster={project.cover || undefined}
+              title={project.title}
+            />
+          </div>
+        )}
 
         {/* External links */}
         <div style={{ display: "flex", gap: "1rem", marginTop: "3rem", flexWrap: "wrap" }}>
