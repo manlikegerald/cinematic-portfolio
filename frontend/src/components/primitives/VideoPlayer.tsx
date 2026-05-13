@@ -274,7 +274,7 @@ export default function VideoPlayer({ url, poster, title = "Video", aspectRatio 
                 color: "var(--color--grey-2)",
                 marginBottom: "0.25rem",
               }}>
-                {type === "youtube" ? "YouTube" : type === "vimeo" ? "Vimeo" : type === "linkedin" ? "LinkedIn" : "Video"}
+                {type === "youtube" ? "YouTube" : type === "vimeo" ? "Vimeo" : "Video"}
               </p>
               <p style={{
                 fontFamily: "var(--font--body)",

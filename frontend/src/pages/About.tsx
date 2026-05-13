@@ -14,11 +14,10 @@ const VALUES = [
 ];
 
 function TimelineEntry({ item }: { item: TimelineItem }) {
-  // @ts-expect-error generic ref
-  const ref = useReveal({ y: 20, delay: 0.1 });
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const ref = useReveal({ y: 20, delay: 0.1 }) as any;
   return (
     <div
-      // @ts-expect-error ref
       ref={ref}
       style={{
         display: "grid",

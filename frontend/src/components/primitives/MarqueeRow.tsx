@@ -46,7 +46,8 @@ export default function MarqueeRow({
     // We map a high-velocity scroll to a shorter animation duration (faster marquee).
     let raf: number;
     const update = () => {
-      const velocity = Math.abs(ScrollTrigger.getVelocity?.() ?? 0);
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const velocity = Math.abs((ScrollTrigger as any).getVelocity?.() ?? 0);
       const boost = Math.min(velocity / 500, 3); // cap at 3× speed boost
       const newSpeed = speed / (1 + boost);
       trackRef.current?.style.setProperty("--marquee-speed", `${newSpeed}s`);

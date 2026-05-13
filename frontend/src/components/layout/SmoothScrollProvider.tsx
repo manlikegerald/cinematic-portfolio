@@ -7,7 +7,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 // Register a custom GSAP easing that matches our CSS --cubic-default token.
 // GSAP components can reference it as ease: "cubic-default".
-gsap.registerEase("cubic-default", "M0,0 C0.65,0.05 0,1 1,1");
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+(gsap as any).registerEase("cubic-default", "M0,0 C0.65,0.05 0,1 1,1");
 
 const LenisContext = createContext<Lenis | null>(null);
 

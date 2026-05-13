@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, type ReactElement } from "react";
 import { motion } from "framer-motion";
 import { getInsights, type SocialInsight } from "@/lib/api";
 import { SITE } from "@/config/site";
@@ -12,7 +12,7 @@ const PLATFORM_COLORS: Record<string, string> = {
   linkedin:  "#0A66C2",
 };
 
-const PLATFORM_ICONS: Record<string, JSX.Element> = {
+const PLATFORM_ICONS: Record<string, ReactElement> = {
   instagram: (
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
       <rect x="2" y="2" width="20" height="20" rx="5"/>

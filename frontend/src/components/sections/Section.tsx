@@ -5,7 +5,7 @@
  * A ScrollTrigger fires on enter AND leave (reverse direction) so theme tracks scroll.
  */
 
-import { useLayoutEffect, useRef, type ReactNode } from "react";
+import { useLayoutEffect, useRef, type ReactNode, type ElementType } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -19,7 +19,7 @@ interface Props {
   id?: string;
   className?: string;
   style?: React.CSSProperties;
-  as?: keyof JSX.IntrinsicElements;
+  as?: ElementType;
 }
 
 export default function Section({

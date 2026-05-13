@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState, type FormEvent, type ChangeEvent } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import AdminLayout from "./AdminLayout";
-import { adminApi, type Project, type ProjectIn } from "@/lib/adminApi";
+import { adminApi, type ProjectIn } from "@/lib/adminApi";
 
 const PROJECT_TYPES = ["Social Media", "Production", "Video", "Brand", "Web", "Design Systems"];
 

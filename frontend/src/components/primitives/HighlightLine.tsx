@@ -103,7 +103,7 @@ export default function HighlightLine({
           inset: 0,
           background: "var(--color--accent)",
           transformOrigin: "right",
-          scaleX: 0,
+          transform: "scaleX(0)",
           mixBlendMode: "multiply",
           pointerEvents: "none",
         }}

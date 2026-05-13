@@ -7,7 +7,8 @@
  * Degrades to a normal horizontal flex scroll on touch / reduced-motion.
  */
 
-import { useLayoutEffect, useRef, type ReactNode } from "react";
+import { useLayoutEffect, useRef } from "react";
+import type { ReactNode } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
