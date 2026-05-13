@@ -117,8 +117,22 @@ export default function WorkDetail() {
         )}
       </div>
 
-      {/* Rich content body — full container width */}
-      <div className="container" style={{ marginBottom: "2rem" }}>
+      {/* Video player — before description */}
+      {project.video_url && (
+        <div className="container" style={{ marginBottom: "4rem" }}>
+          <p className="text-eyebrow" style={{ color: "var(--color--grey-2)", marginBottom: "1rem" }}>
+            Watch
+          </p>
+          <VideoPlayer
+            url={project.video_url}
+            poster={project.cover || undefined}
+            title={project.title}
+          />
+        </div>
+      )}
+
+      {/* Rich content body — full container width, after video */}
+      <div className="container" style={{ marginBottom: "6rem" }}>
         {project.content.map((block, i) => {
           if (block.type === "paragraph") {
             return (
@@ -141,25 +155,9 @@ export default function WorkDetail() {
           }
           return null;
         })}
-      </div>
 
-      {/* Video player — full container width, after description */}
-      {project.video_url && (
-        <div className="container" style={{ marginBottom: "4rem" }}>
-          <p className="text-eyebrow" style={{ color: "var(--color--grey-2)", marginBottom: "1rem" }}>
-            Watch
-          </p>
-          <VideoPlayer
-            url={project.video_url}
-            poster={project.cover || undefined}
-            title={project.title}
-          />
-        </div>
-      )}
-
-      {/* External links */}
-      <div className="container" style={{ marginBottom: "6rem" }}>
-        <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
+        {/* External links */}
+        <div style={{ display: "flex", gap: "1rem", marginTop: "3rem", flexWrap: "wrap" }}>
           {project.link_live && (
             <a href={project.link_live} target="_blank" rel="noopener noreferrer">
               <ArrowButton label="View live" />
