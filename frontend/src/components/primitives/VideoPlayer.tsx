@@ -41,12 +41,17 @@ function getVimeoId(url: string): string | null {
   return m ? m[1] : null;
 }
 
-type VideoType = "youtube" | "vimeo" | "direct" | "unknown";
+function isLinkedIn(url: string): boolean {
+  return /linkedin\.com\//i.test(url);
+}
+
+type VideoType = "youtube" | "vimeo" | "direct" | "linkedin" | "unknown";
 
 function detectType(url: string): VideoType {
   if (getYouTubeId(url)) return "youtube";
   if (getVimeoId(url))   return "vimeo";
   if (/\.(mp4|webm|mov|ogg)(\?|$)/i.test(url)) return "direct";
+  if (isLinkedIn(url))   return "linkedin";
   return "unknown";
 }
 
@@ -122,12 +127,76 @@ function PlayButton({ onClick }: { onClick: () => void }) {
   );
 }
 
+// LinkedIn card — opens the post in a new tab (LinkedIn blocks iframe embedding)
+function LinkedInCard({ url, poster, title }: { url: string; poster?: string; title: string }) {
+  return (
+    <div style={{ position: "absolute", inset: 0 }}>
+      {poster ? (
+        <img src={poster} alt={title} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+      ) : (
+        <div style={{ width: "100%", height: "100%", background: "linear-gradient(135deg, #0a0a14 0%, #0a0a0a 100%)" }} />
+      )}
+      {/* Scrim */}
+      <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.55)" }} />
+      {/* Content */}
+      <div style={{ position: "absolute", inset: 0, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: "1.25rem" }}>
+        {/* LinkedIn logo mark */}
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+          <rect width="40" height="40" rx="6" fill="#0A66C2" />
+          <path d="M13 16h-4v12h4V16zm-2-7a2 2 0 110 4 2 2 0 010-4zm8 7h-4v12h4v-6c0-1.8 1-3 2.5-3s2.5 1 2.5 3v6h4v-6.5c0-3.5-2-5.5-5-5.5-1.5 0-2.8.7-3.5 1.8V16z" fill="white" />
+        </svg>
+        <div style={{ textAlign: "center" }}>
+          <p style={{ fontFamily: "var(--font--body)", fontSize: "0.7rem", letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--color--grey-2)", marginBottom: "0.4rem" }}>
+            LinkedIn Video
+          </p>
+          <p style={{ fontFamily: "var(--font--body)", fontSize: "1rem", fontWeight: 600, color: "var(--color--off-white)" }}>
+            {title}
+          </p>
+        </div>
+        <a
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            display: "inline-flex",
+            alignItems: "center",
+            gap: "0.5rem",
+            padding: "0.65rem 1.4rem",
+            background: "#0A66C2",
+            color: "#fff",
+            borderRadius: "2rem",
+            fontFamily: "var(--font--body)",
+            fontSize: "0.82rem",
+            fontWeight: 600,
+            letterSpacing: "0.04em",
+            textDecoration: "none",
+          }}
+        >
+          Watch on LinkedIn
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  );
+}
+
 // ── Main component ─────────────────────────────────────────────────────────
 
 export default function VideoPlayer({ url, poster, title = "Video", aspectRatio = "16/9" }: Props) {
   const [playing, setPlaying] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
   const type = detectType(url);
+
+  // LinkedIn can't be embedded — show the card directly without a play interaction
+  if (type === "linkedin") {
+    return (
+      <div style={{ position: "relative", width: "100%", aspectRatio, background: "var(--color--dark)", borderRadius: "var(--radius-lg)", overflow: "hidden", boxShadow: "0 32px 80px rgba(0,0,0,0.5)" }}>
+        <LinkedInCard url={url} poster={poster} title={title} />
+      </div>
+    );
+  }
 
   const handlePlay = useCallback(() => {
     setPlaying(true);
@@ -205,7 +274,7 @@ export default function VideoPlayer({ url, poster, title = "Video", aspectRatio 
                 color: "var(--color--grey-2)",
                 marginBottom: "0.25rem",
               }}>
-                {type === "youtube" ? "YouTube" : type === "vimeo" ? "Vimeo" : "Video"}
+                {type === "youtube" ? "YouTube" : type === "vimeo" ? "Vimeo" : type === "linkedin" ? "LinkedIn" : "Video"}
               </p>
               <p style={{
                 fontFamily: "var(--font--body)",
