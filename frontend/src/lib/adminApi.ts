@@ -40,6 +40,12 @@ export const adminApi = {
     request<TimelineEntry>("PUT", `/timeline/${id}`, data),
   deleteTimelineEntry: (id: number) => request<void>("DELETE", `/timeline/${id}`),
 
+  // Social Insights
+  getInsights: () => request<SocialInsight[]>("GET", "/insights"),
+  createInsight: (data: SocialInsightIn) => request<SocialInsight>("POST", "/insights", data),
+  updateInsight: (id: number, data: SocialInsightIn) => request<SocialInsight>("PUT", `/insights/${id}`, data),
+  deleteInsight: (id: number) => request<void>("DELETE", `/insights/${id}`),
+
   // Profile
   getProfile: () => request<Profile>("GET", "/profile"),
   updateProfile: (data: ProfileIn) => request<Profile>("PUT", "/profile", data),
@@ -108,14 +114,14 @@ export interface TimelineEntry {
   year: number;
   title: string;
   description: string;
-  category: "work" | "life" | "award";
+  category: "work" | "life" | "award" | "school";
 }
 
 export interface TimelineIn {
   year: number;
   title: string;
   description: string;
-  category: "work" | "life" | "award";
+  category: "work" | "life" | "award" | "school";
 }
 
 export interface Social {
@@ -133,6 +139,26 @@ export interface Profile {
   socials: Social[];
   currently: string;
   next: string;
+}
+
+export interface InsightStat {
+  label: string;
+  value: string;
+}
+
+export interface SocialInsight {
+  id: number;
+  platform: string;
+  handle: string;
+  stats: InsightStat[];
+  sort_order: number;
+}
+
+export interface SocialInsightIn {
+  platform: string;
+  handle: string;
+  stats: InsightStat[];
+  sort_order: number;
 }
 
 export interface ProfileIn {

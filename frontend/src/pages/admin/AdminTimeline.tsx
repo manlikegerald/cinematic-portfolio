@@ -2,7 +2,7 @@ import { useEffect, useState, type FormEvent } from "react";
 import AdminLayout from "./AdminLayout";
 import { adminApi, type TimelineEntry, type TimelineIn } from "@/lib/adminApi";
 
-const CATEGORIES = ["work", "life", "award"] as const;
+const CATEGORIES = ["work", "life", "award", "school"] as const;
 type Category = typeof CATEGORIES[number];
 
 const blankForm: TimelineIn = { year: new Date().getFullYear(), title: "", description: "", category: "work" };
@@ -80,7 +80,7 @@ export default function AdminTimeline() {
     }
   }
 
-  const categoryColor: Record<Category, string> = { work: "#3b82f6", life: "#10b981", award: "#f59e0b" };
+  const categoryColor: Record<Category, string> = { work: "#3b82f6", life: "#10b981", award: "#f59e0b", school: "#a855f7" };
 
   return (
     <AdminLayout>

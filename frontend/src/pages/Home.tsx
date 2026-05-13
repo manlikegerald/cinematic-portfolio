@@ -6,6 +6,7 @@ import ProjectGrid from "@/components/sections/ProjectGrid";
 import MarqueeRow from "@/components/primitives/MarqueeRow";
 import { ALL_TOOL_LOGOS } from "@/components/primitives/ToolLogos";
 import ContactBlock from "@/components/sections/ContactBlock";
+import SocialInsightsSection from "@/components/sections/SocialInsights";
 import Section from "@/components/sections/Section";
 import { getProfile, getProjects, type Profile, type Project } from "@/lib/api";
 import { SITE } from "@/config/site";
@@ -48,17 +49,19 @@ export default function Home() {
           label: SITE.splitLeft.label,
           sub: SITE.splitLeft.sub,
           description:
-            "[PLACEHOLDER] The craft of building — products, interfaces, and systems that work beautifully under the hood.",
+            "From brand identities that communicate before a word is read, to layout systems that hold together across every surface — design is how I make the invisible visible.",
           link: "/work",
           linkLabel: "See the work",
+          tags: ["Brand Identity", "Figma", "Illustrator", "Print", "Digital"],
         }}
         right={{
           label: SITE.splitRight.label,
           sub: SITE.splitRight.sub,
           description:
-            "[PLACEHOLDER] Writing, talks, and ideas shared with the community — because knowledge compounds when it's open.",
-          link: "/about",
-          linkLabel: "Read more",
+            "Directing, editing, and producing video content that earns attention — from music videos and wedding films to social campaigns that trend at number one.",
+          link: "/work",
+          linkLabel: "View projects",
+          tags: ["Video Production", "Direction", "Social Media", "Editing", "DaVinci"],
         }}
       />
 
@@ -95,7 +98,10 @@ export default function Home() {
         </MarqueeRow>
       </Section>
 
-      {/* 6. Contact CTA */}
+      {/* 6. Social Insights */}
+      <SocialInsightsSection />
+
+      {/* 7. Contact CTA */}
       <ContactBlock />
     </>
   );

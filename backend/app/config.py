@@ -8,7 +8,7 @@ class Settings(BaseSettings):
     allowed_origins: str = "http://localhost:5173,http://localhost:4173"
 
     # Admin auth
-    admin_password: str = "admin123"
+    admin_password: str = "12345"
     secret_key: str = "changeme-secret-key-please-update-in-env"
 
     # SMTP — all optional; contact form silently skips emailing if unset

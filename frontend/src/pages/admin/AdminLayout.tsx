@@ -2,10 +2,11 @@ import { useEffect, type ReactNode } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 
 const NAV_ITEMS = [
-  { label: "Dashboard", path: "/admin" },
-  { label: "Projects", path: "/admin/projects" },
-  { label: "Timeline", path: "/admin/timeline" },
-  { label: "Profile", path: "/admin/profile" },
+  { label: "Dashboard",       path: "/admin" },
+  { label: "Projects",        path: "/admin/projects" },
+  { label: "Timeline",        path: "/admin/timeline" },
+  { label: "Social Insights", path: "/admin/insights" },
+  { label: "Profile",         path: "/admin/profile" },
 ];
 
 function signOut(navigate: ReturnType<typeof useNavigate>) {

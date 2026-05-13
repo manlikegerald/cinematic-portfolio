@@ -49,6 +49,16 @@ class TimelineModel(Base):
     category: Mapped[str] = mapped_column(String(50), default="work")
 
 
+class SocialInsightModel(Base):
+    __tablename__ = "social_insights"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    platform: Mapped[str] = mapped_column(String(50))        # "instagram", "youtube" …
+    handle: Mapped[str] = mapped_column(String(100), default="")
+    stats: Mapped[list] = mapped_column(JSON, default=list)  # [{label, value}]
+    sort_order: Mapped[int] = mapped_column(Integer, default=0)
+
+
 class ContactModel(Base):
     __tablename__ = "contacts"
 

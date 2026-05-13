@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Section from "@/components/sections/Section";
 import ProjectGrid from "@/components/sections/ProjectGrid";
 import SplitText from "@/components/primitives/SplitText";
+import AnimatedBackground from "@/components/primitives/AnimatedBackground";
 import { getProjects, type Project } from "@/lib/api";
 
 type Filter = "all" | string;
@@ -24,9 +25,14 @@ export default function Work() {
         paddingTop: "calc(var(--nav-height) + 4rem)",
         paddingBottom: "var(--section-padding)",
         minHeight: "100svh",
+        position: "relative",
+        overflow: "hidden",
       }}
     >
-      <div className="container">
+      <div style={{ position: "absolute", inset: 0, opacity: 0.08, pointerEvents: "none" }}>
+        <AnimatedBackground />
+      </div>
+      <div className="container" style={{ position: "relative", zIndex: 1 }}>
         <p className="text-eyebrow" style={{ color: "var(--color--grey-2)", marginBottom: "1rem" }}>
           Selected work
         </p>

@@ -50,6 +50,8 @@ function TimelineEntry({ item }: { item: TimelineItem }) {
               ? "var(--color--accent)"
               : item.category === "award"
               ? "var(--color--grey-1)"
+              : item.category === "school"
+              ? "#a855f7"
               : "var(--color--grey-2)",
           }}
         >

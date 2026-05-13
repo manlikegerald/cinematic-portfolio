@@ -54,7 +54,20 @@ export interface TimelineItem {
   year: number;
   title: string;
   description: string;
-  category: "work" | "life" | "award";
+  category: "work" | "life" | "award" | "school";
+}
+
+export interface InsightStat {
+  label: string;
+  value: string;
+}
+
+export interface SocialInsight {
+  id: number;
+  platform: string;
+  handle: string;
+  stats: InsightStat[];
+  sort_order: number;
 }
 
 export interface ContactPayload {
@@ -70,5 +83,6 @@ export const getProfile  = ()          => request<Profile>("/profile");
 export const getProjects = ()          => request<Project[]>("/projects");
 export const getProject  = (slug: string) => request<Project>(`/projects/${slug}`);
 export const getTimeline = ()          => request<TimelineItem[]>("/timeline");
+export const getInsights = ()          => request<SocialInsight[]>("/insights");
 export const postContact = (body: ContactPayload) =>
   request<{ ok: boolean }>("/contact", { method: "POST", body: JSON.stringify(body) });

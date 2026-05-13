@@ -53,7 +53,22 @@ class TimelineOut(BaseModel):
     year: int
     title: str
     description: str
-    category: Literal["work", "life", "award"]
+    category: Literal["work", "life", "award", "school"]
+
+    model_config = {"from_attributes": True}
+
+
+class InsightStat(BaseModel):
+    label: str
+    value: str
+
+
+class SocialInsightOut(BaseModel):
+    id: int
+    platform: str
+    handle: str
+    stats: list[InsightStat]
+    sort_order: int
 
     model_config = {"from_attributes": True}
 

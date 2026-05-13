@@ -18,7 +18,7 @@ class TimelineIn(BaseModel):
     year: int
     title: str
     description: str
-    category: Literal["work", "life", "award"] = "work"
+    category: Literal["work", "life", "award", "school"] = "work"
 
 
 @router.get("/timeline", response_model=list[TimelineOut])

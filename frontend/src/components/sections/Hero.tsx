@@ -3,6 +3,7 @@ import gsap from "gsap";
 import SplitText from "@/components/primitives/SplitText";
 import AnimatedBackground from "@/components/primitives/AnimatedBackground";
 import ArrowButton from "@/components/primitives/ArrowButton";
+import SocialIcons from "@/components/primitives/SocialIcons";
 import { SITE } from "@/config/site";
 import type { Profile } from "@/lib/api";
 
@@ -148,6 +149,10 @@ export default function Hero({ profile }: Props) {
             label="View my work"
             style={{ marginLeft: "auto", alignSelf: "center" }}
           />
+        </div>
+
+        <div style={{ marginTop: "2rem" }}>
+          <SocialIcons exclude={["email", "github"]} />
         </div>
       </div>
     </section>

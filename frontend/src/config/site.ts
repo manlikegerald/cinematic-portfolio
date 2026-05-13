@@ -23,9 +23,14 @@ export const SITE = {
   ],
 
   socials: [
-    { label: "email",    href: "mailto:adjemancofiegerald@gmail.com" },
-    { label: "linkedin", href: "https://www.linkedin.com/in/gerald-adjeman-cofie-bb2307216" },
-    { label: "github",   href: "https://github.com/manlikegerald" },
+    { label: "email",     href: "mailto:adjemancofiegerald@gmail.com" },
+    { label: "linkedin",  href: "https://www.linkedin.com/in/gerald-adjeman-cofie-bb2307216" },
+    { label: "instagram", href: "https://www.instagram.com/woprikraadodo?igsh=MWRkd3doZW5nbDNudw%3D%3D&utm_source=qr" },
+    { label: "x",         href: "https://x.com/woprikraadodo?s=21" },
+    { label: "tiktok",    href: "https://www.tiktok.com/@woprikraadodo?_r=1&_t=ZS-96KV3HsSO8a" },
+    { label: "youtube",   href: "https://youtube.com/@officialgerald?si=WKghuakynY1m9MC2" },
+    { label: "facebook",  href: "https://www.facebook.com/share/1ED1ftzF4T/?mibextid=wwXIfr" },
+    { label: "github",    href: "https://github.com/manlikegerald" },
   ],
 
   // OnOffSplit section labels

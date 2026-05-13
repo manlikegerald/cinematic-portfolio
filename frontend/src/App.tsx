@@ -21,6 +21,7 @@ const AdminDashboard   = lazy(() => import("@/pages/admin/AdminDashboard"));
 const AdminProjects    = lazy(() => import("@/pages/admin/AdminProjects"));
 const AdminProjectEdit = lazy(() => import("@/pages/admin/AdminProjectEdit"));
 const AdminTimeline    = lazy(() => import("@/pages/admin/AdminTimeline"));
+const AdminInsights    = lazy(() => import("@/pages/admin/AdminInsights"));
 const AdminProfile     = lazy(() => import("@/pages/admin/AdminProfile"));
 
 function PageLoader() {
@@ -54,6 +55,7 @@ export default function App() {
           <Route path="/admin/projects"        element={<AdminProjects />} />
           <Route path="/admin/projects/:id"    element={<AdminProjectEdit />} />
           <Route path="/admin/timeline"        element={<AdminTimeline />} />
+          <Route path="/admin/insights"        element={<AdminInsights />} />
           <Route path="/admin/profile"         element={<AdminProfile />} />
         </Routes>
       </Suspense>
