@@ -13,7 +13,7 @@ export default function WorkDetail() {
   const { slug } = useParams<{ slug: string }>();
   const [project, setProject]   = useState<Project | null>(null);
   const [projects, setProjects] = useState<Project[]>([]);
-  const coverRef = useRef<HTMLDivElement>(null);
+  const coverRef = useRef<HTMLImageElement>(null);
 
   useEffect(() => {
     if (!slug) return;
@@ -26,16 +26,20 @@ export default function WorkDetail() {
   useEffect(() => {
     if (!coverRef.current) return;
     const ctx = gsap.context(() => {
-      gsap.to(coverRef.current, {
-        yPercent: 20,
-        ease: "none",
-        scrollTrigger: {
-          trigger: coverRef.current,
-          start: "top top",
-          end: "bottom top",
-          scrub: true,
-        },
-      });
+      gsap.fromTo(
+        coverRef.current,
+        { yPercent: -10 },
+        {
+          yPercent: 10,
+          ease: "none",
+          scrollTrigger: {
+            trigger: coverRef.current,
+            start: "top top",
+            end: "bottom top",
+            scrub: true,
+          },
+        }
+      );
     });
     return () => ctx.revert();
   }, [project]);
@@ -91,9 +95,8 @@ export default function WorkDetail() {
         </div>
       </section>
 
-      {/* Full-bleed cover with parallax */}
+      {/* Full-bleed cover — wrapper is static; only the image moves for parallax */}
       <div
-        ref={coverRef}
         style={{
           overflow: "hidden",
           aspectRatio: "16/9",
@@ -103,9 +106,10 @@ export default function WorkDetail() {
       >
         {project.cover ? (
           <img
+            ref={coverRef}
             src={project.cover}
             alt={project.title}
-            style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            style={{ width: "100%", height: "110%", objectFit: "cover", display: "block" }}
           />
         ) : (
           <svg width="100%" height="100%" viewBox="0 0 1600 900">
