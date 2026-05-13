@@ -38,5 +38,5 @@ export const SITE = {
   splitRight: { label: "CREATE", sub: "Video & Social Media" },
 
   // Backend API origin (Vite proxy handles /api in dev, override for prod)
-  apiBase: "/api",
+  apiBase: import.meta.env.VITE_API_BASE ?? "/api",
 } as const;

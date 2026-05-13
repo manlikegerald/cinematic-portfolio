@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: cinematic-portfolio-api
+    runtime: python
+    rootDir: backend
+    buildCommand: pip install uv && uv sync
+    startCommand: uv run uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: ALLOWED_ORIGINS
+        value: https://cinematic-portfolio.vercel.app
+      - key: SECRET_KEY
+        generateValue: true
+      - key: ADMIN_PASSWORD
+        value: 12345
