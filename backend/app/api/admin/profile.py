@@ -45,12 +45,14 @@ async def update_profile(
 ):
     result = await db.execute(select(ProfileModel))
     profile = result.scalar_one_or_none()
-    if not profile:
-        raise HTTPException(status_code=404, detail="Profile not found — run seed first")
     data = body.model_dump()
     data["socials"] = [s.model_dump() for s in body.socials]
-    for key, value in data.items():
-        setattr(profile, key, value)
+    if not profile:
+        profile = ProfileModel(**data)
+        db.add(profile)
+    else:
+        for key, value in data.items():
+            setattr(profile, key, value)
     await db.commit()
     await db.refresh(profile)
     return profile
