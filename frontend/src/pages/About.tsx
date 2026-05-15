@@ -103,7 +103,7 @@ export default function About() {
             {/* Portrait */}
             <div style={{ borderRadius: "var(--radius-lg)", overflow: "hidden", aspectRatio: "3/4", background: "var(--color--dark-tint-1)" }}>
               <img
-                src="/images/gerald-portrait.jpg"
+                src="/images/gerald-portrait.webp"
                 alt="Gerald Adjeman-Cofie"
                 style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }}
               />
