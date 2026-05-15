@@ -57,10 +57,10 @@ export default function Nav() {
       >
         {/* Monogram / logo */}
         <NavLink to="/" aria-label="Home">
-          <svg width="36" height="36" viewBox="0 0 36 36" aria-hidden="true">
-            <rect width="36" height="36" rx="4" fill="var(--color--accent)" />
+          <svg width="52" height="36" viewBox="0 0 52 36" aria-hidden="true">
+            <rect width="52" height="36" rx="4" fill="var(--color--accent)" />
             <text
-              x="18"
+              x="26"
               y="24"
               textAnchor="middle"
               fontSize="14"
@@ -84,6 +84,8 @@ export default function Nav() {
                   style={({ isActive }) => ({
                     color: isActive ? "var(--color--accent)" : "var(--color--off-white)",
                     transition: "color var(--duration-fast) var(--cubic-default)",
+                    fontSize: "1rem",
+                    letterSpacing: "0.08em",
                   })}
                 >
                   {item.label}
