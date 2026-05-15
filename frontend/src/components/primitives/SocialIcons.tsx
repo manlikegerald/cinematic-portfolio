@@ -57,7 +57,7 @@ interface Props {
   color?: string;
 }
 
-export default function SocialIcons({ exclude = [], size = 18, gap = "1.25rem", color = "var(--color--grey-2)" }: Props) {
+export default function SocialIcons({ exclude = [], size = 18, gap = "1.25rem", color = "var(--color--off-white)" }: Props) {
   const socials = SITE.socials.filter((s) => !exclude.includes(s.label));
 
   return (
@@ -80,7 +80,7 @@ export default function SocialIcons({ exclude = [], size = 18, gap = "1.25rem", 
               width: size + 16,
               height: size + 16,
               borderRadius: "50%",
-              border: "1px solid var(--color--dark-tint-2)",
+              border: "1px solid var(--color--grey-2)",
               transition: "color 0.2s, border-color 0.2s",
             }}
             onMouseEnter={(e) => {

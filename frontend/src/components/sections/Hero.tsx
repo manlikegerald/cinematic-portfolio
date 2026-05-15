@@ -46,9 +46,9 @@ export default function Hero({ profile }: Props) {
         height: "100svh",
         display: "flex",
         flexDirection: "column",
-        justifyContent: "flex-end",
+        justifyContent: "center",
         overflow: "hidden",
-        paddingBottom: "var(--section-padding)",
+        paddingTop: "var(--nav-height)",
       }}
     >
       {/* Layer 1 — solid dark base */}
@@ -97,19 +97,16 @@ export default function Hero({ profile }: Props) {
       />
 
       {/* Layer 5 — content */}
-      <div className="container" style={{ position: "relative", zIndex: 4 }}>
-        <p className="text-eyebrow" style={{ color: "var(--color--accent)", marginBottom: "1rem" }}>
-          {tagline} · Since {SITE.since}
-        </p>
-
+      <div className="container" style={{ position: "relative", zIndex: 4, textAlign: "center" }}>
         <p style={{
           fontFamily: "var(--font--body)",
-          fontSize: "clamp(0.7rem, 1.2vw, 1rem)",
+          fontSize: "1.8rem",
           fontWeight: 800,
           letterSpacing: "0.35em",
           textTransform: "uppercase",
-          color: "var(--color--grey-2)",
-          marginBottom: "0.75rem",
+          color: "var(--color--off-white)",
+          opacity: 0.75,
+          marginBottom: "3.5rem",
         }}>
           Portfolio
         </p>
@@ -122,38 +119,43 @@ export default function Hero({ profile }: Props) {
           delay={0.2}
           start="top 100%"
           className="text-impact-reg-brier"
-          style={{ color: "var(--color--white)", marginBottom: "2.5rem", fontStyle: "normal", whiteSpace: "nowrap" }}
+          style={{ color: "var(--color--white)", marginBottom: "1.5rem", fontStyle: "normal", fontSize: "clamp(3.5rem, 12vw, 11rem)", lineHeight: 1, wordBreak: "break-word" }}
         >
           {name}
         </SplitText>
 
-        <div style={{ display: "flex", alignItems: "flex-start", gap: "2rem", flexWrap: "wrap" }}>
-          <div style={{ borderLeft: "2px solid var(--color--accent)", paddingLeft: "1rem" }}>
-            <p className="text-eyebrow" style={{ color: "var(--color--grey-2)", marginBottom: "0.25rem" }}>
-              Currently
-            </p>
-            <p className="text-body-reg-mona" style={{ color: "var(--color--off-white)" }}>
-              {currently}
-            </p>
-          </div>
-          <div style={{ borderLeft: "2px solid var(--color--dark-tint-2)", paddingLeft: "1rem" }}>
-            <p className="text-eyebrow" style={{ color: "var(--color--grey-2)", marginBottom: "0.25rem" }}>
-              Next
-            </p>
-            <p className="text-body-reg-mona" style={{ color: "var(--color--grey-1)" }}>
-              {next}
-            </p>
-          </div>
-          <ArrowButton
-            href="/work"
-            label="View my work"
-            style={{ marginLeft: "auto", alignSelf: "center" }}
-          />
-        </div>
+        <p className="text-eyebrow" style={{ color: "var(--color--accent)", marginBottom: "4rem", fontSize: "clamp(0.8rem, 1.4vw, 1.1rem)" }}>
+          {tagline} · Since {SITE.since}
+        </p>
 
-        <div style={{ marginTop: "2rem" }}>
-          <SocialIcons exclude={["email", "github"]} />
-        </div>
+        <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "center", gap: "3rem", flexWrap: "wrap", marginTop: "4rem" }}>
+            <div style={{ borderLeft: "2px solid var(--color--accent)", paddingLeft: "1.25rem", textAlign: "left" }}>
+              <p className="text-eyebrow" style={{ color: "var(--color--grey-2)", marginBottom: "0.35rem", fontSize: "clamp(0.75rem, 1.1vw, 0.95rem)" }}>
+                Currently
+              </p>
+              <p className="text-body-reg-mona" style={{ color: "var(--color--off-white)", fontSize: "clamp(0.95rem, 1.4vw, 1.15rem)" }}>
+                {currently}
+              </p>
+            </div>
+            <div style={{ borderLeft: "2px solid var(--color--dark-tint-2)", paddingLeft: "1.25rem", textAlign: "left" }}>
+              <p className="text-eyebrow" style={{ color: "var(--color--grey-2)", marginBottom: "0.35rem", fontSize: "clamp(0.75rem, 1.1vw, 0.95rem)" }}>
+                Next
+              </p>
+              <p className="text-body-reg-mona" style={{ color: "var(--color--grey-1)", fontSize: "clamp(0.95rem, 1.4vw, 1.15rem)" }}>
+                {next}
+              </p>
+            </div>
+            <ArrowButton
+              href="/work"
+              label="View my work"
+              style={{ alignSelf: "center" }}
+            />
+          </div>
+      </div>
+
+      {/* Bottom — social icons pinned to bottom */}
+      <div style={{ position: "absolute", bottom: "var(--section-padding)", left: 0, right: 0, zIndex: 4, display: "flex", justifyContent: "center" }}>
+        <SocialIcons exclude={["email", "github"]} />
       </div>
     </section>
   );
