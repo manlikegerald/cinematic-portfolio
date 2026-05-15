@@ -5,6 +5,16 @@ class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8", extra="ignore")
 
     database_url: str = "sqlite+aiosqlite:///./portfolio.db"
+
+    @property
+    def async_database_url(self) -> str:
+        url = self.database_url
+        # Railway sets DATABASE_URL as postgres:// — convert to asyncpg
+        if url.startswith("postgres://"):
+            url = url.replace("postgres://", "postgresql+asyncpg://", 1)
+        elif url.startswith("postgresql://") and "+asyncpg" not in url:
+            url = url.replace("postgresql://", "postgresql+asyncpg://", 1)
+        return url
     allowed_origins: str = "http://localhost:5173,http://localhost:4173"
 
     # Admin auth
