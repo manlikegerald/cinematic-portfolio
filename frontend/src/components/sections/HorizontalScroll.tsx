@@ -176,19 +176,6 @@ export default function HorizontalScroll({ items }: Props) {
               ) : (
                 <PlaceholderImage label={item.alt ?? `[PLACEHOLDER] Image ${i + 1}`} />
               )}
-              {item.year && (
-                <p
-                  className="text-eyebrow"
-                  style={{
-                    position: "absolute",
-                    bottom: "1rem",
-                    left: "1rem",
-                    color: "var(--color--off-white)",
-                  }}
-                >
-                  {item.year}
-                </p>
-              )}
             </div>
           )
         )}
