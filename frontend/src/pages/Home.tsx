@@ -15,6 +15,9 @@ import { SITE } from "@/config/site";
 const GALLERY_ITEMS = [
   { type: "image" as const, src: "/images/gallery/independence-day.webp", alt: "One Voice Choir — Ghana Independence Day poster", year: "2024" },
   { type: "image" as const, src: "/images/gallery/one-voice-choir-youtube.webp", alt: "One Voice Choir Ghana — YouTube Channel Promo", year: "2025" },
+  { type: "image" as const, src: "/images/gallery/one-voice-founders-day.webp", alt: "One Voice Choir Ghana — Happy Founders' Day", year: "2024" },
+  { type: "image" as const, src: "/images/gallery/one-voice-20-years.webp", alt: "One Voice Choir Ghana — 20 Years of Music", year: "2024" },
+  { type: "image" as const, src: "/images/gallery/one-voice-birthday-esther.webp", alt: "One Voice Choir Ghana — Birthday Esther", year: "2024" },
   { type: "image" as const, src: "/images/gallery/bace-digital-marketing.webp", alt: "BACE Africa — Digital Marketing Solutions", year: "2023" },
   { type: "image" as const, src: "/images/gallery/lord-not-my-will-cover.webp", alt: "Lord Not My Will — Loretta Larbi ft Nxon, album art", year: "2024" },
   { type: "image" as const, src: "/images/gallery/lord-not-my-will-promo.webp", alt: "Lord Not My Will — Coming Soon promo", year: "2024" },
