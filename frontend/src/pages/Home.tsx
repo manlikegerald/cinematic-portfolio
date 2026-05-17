@@ -14,6 +14,7 @@ import { SITE } from "@/config/site";
 // Placeholder gallery items for the horizontal scroll
 const GALLERY_ITEMS = [
   { type: "image" as const, src: "/images/gallery/independence-day.webp", alt: "One Voice Choir — Ghana Independence Day poster", year: "2024" },
+  { type: "image" as const, src: "/images/gallery/one-voice-choir-youtube.webp", alt: "One Voice Choir Ghana — YouTube Channel Promo", year: "2025" },
   { type: "text" as const, quote: "It's not about the destination, it's about what you build on the way.", credit: "— [PLACEHOLDER]" },
   { type: "image" as const, src: "/images/gallery/bace-digital-marketing.webp", alt: "BACE Africa — Digital Marketing Solutions", year: "2023" },
   { type: "image" as const, src: "/images/gallery/lord-not-my-will-cover.webp", alt: "Lord Not My Will — Loretta Larbi ft Nxon, album art", year: "2024" },
