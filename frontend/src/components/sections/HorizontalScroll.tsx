@@ -171,7 +171,7 @@ export default function HorizontalScroll({ items }: Props) {
                   src={item.src}
                   alt={item.alt ?? ""}
                   loading="lazy"
-                  style={{ width: "100%", display: "block", objectFit: "cover" }}
+                  style={{ width: "100%", display: "block", objectFit: "contain" }}
                 />
               ) : (
                 <PlaceholderImage label={item.alt ?? `[PLACEHOLDER] Image ${i + 1}`} />
