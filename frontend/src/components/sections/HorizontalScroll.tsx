@@ -164,14 +164,15 @@ export default function HorizontalScroll({ items }: Props) {
                 borderRadius: "var(--radius-lg)",
                 overflow: "hidden",
                 position: "relative",
+                background: "var(--color--dark-tint-1)",
               }}
             >
               {item.src ? (
                 <img
                   src={item.src}
                   alt={item.alt ?? ""}
-                  loading="lazy"
-                  style={{ width: "100%", display: "block", objectFit: "contain" }}
+                  loading="eager"
+                  style={{ width: "100%", height: "auto", display: "block" }}
                 />
               ) : (
                 <PlaceholderImage label={item.alt ?? `[PLACEHOLDER] Image ${i + 1}`} />
