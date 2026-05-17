@@ -15,10 +15,8 @@ import { SITE } from "@/config/site";
 const GALLERY_ITEMS = [
   { type: "image" as const, src: "/images/gallery/independence-day.webp", alt: "One Voice Choir — Ghana Independence Day poster", year: "2024" },
   { type: "image" as const, src: "/images/gallery/one-voice-choir-youtube.webp", alt: "One Voice Choir Ghana — YouTube Channel Promo", year: "2025" },
-  { type: "text" as const, quote: "It's not about the destination, it's about what you build on the way.", credit: "— [PLACEHOLDER]" },
   { type: "image" as const, src: "/images/gallery/bace-digital-marketing.webp", alt: "BACE Africa — Digital Marketing Solutions", year: "2023" },
   { type: "image" as const, src: "/images/gallery/lord-not-my-will-cover.webp", alt: "Lord Not My Will — Loretta Larbi ft Nxon, album art", year: "2024" },
-  { type: "text" as const, quote: "Good design is invisible. Great design is unforgettable.", credit: "— [PLACEHOLDER]" },
   { type: "image" as const, src: "/images/gallery/lord-not-my-will-promo.webp", alt: "Lord Not My Will — Coming Soon promo", year: "2024" },
   { type: "image" as const, src: "/images/gallery/loretta-1k-subscribers.webp", alt: "Loretta Larbi — 1K YouTube Subscribers milestone", year: "2024" },
   { type: "image" as const, src: "/images/gallery/resounding-hope.webp", alt: "Freedom Choir Ghana — Resounding Hope Kumasi Edition", year: "2026" },
