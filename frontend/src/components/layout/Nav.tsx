@@ -56,7 +56,7 @@ export default function Nav() {
         }}
       >
         {/* Monogram / logo */}
-        <NavLink to="/" aria-label="Home">
+        <NavLink to="/" aria-label="Home" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
           <svg width="52" height="36" viewBox="0 0 52 36" aria-hidden="true">
             <rect width="52" height="36" rx="4" fill="var(--color--accent)" />
             <text
