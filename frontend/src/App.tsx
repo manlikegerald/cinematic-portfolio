@@ -16,13 +16,13 @@ const Contact       = lazy(() => import("@/pages/Contact"));
 const DevPrimitives = lazy(() => import("@/pages/DevPrimitives"));
 
 // Admin pages (no Nav/Footer/SmoothScroll)
-const AdminLogin       = lazy(() => import("@/pages/gac-studio/AdminLogin"));
-const AdminDashboard   = lazy(() => import("@/pages/gac-studio/AdminDashboard"));
-const AdminProjects    = lazy(() => import("@/pages/gac-studio/AdminProjects"));
-const AdminProjectEdit = lazy(() => import("@/pages/gac-studio/AdminProjectEdit"));
-const AdminTimeline    = lazy(() => import("@/pages/gac-studio/AdminTimeline"));
-const AdminInsights    = lazy(() => import("@/pages/gac-studio/AdminInsights"));
-const AdminProfile     = lazy(() => import("@/pages/gac-studio/AdminProfile"));
+const AdminLogin       = lazy(() => import("@/pages/admin/AdminLogin"));
+const AdminDashboard   = lazy(() => import("@/pages/admin/AdminDashboard"));
+const AdminProjects    = lazy(() => import("@/pages/admin/AdminProjects"));
+const AdminProjectEdit = lazy(() => import("@/pages/admin/AdminProjectEdit"));
+const AdminTimeline    = lazy(() => import("@/pages/admin/AdminTimeline"));
+const AdminInsights    = lazy(() => import("@/pages/admin/AdminInsights"));
+const AdminProfile     = lazy(() => import("@/pages/admin/AdminProfile"));
 
 function PageLoader() {
   return (
