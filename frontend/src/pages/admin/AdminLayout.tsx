@@ -2,16 +2,16 @@ import { useEffect, type ReactNode } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 
 const NAV_ITEMS = [
-  { label: "Dashboard",       path: "/admin" },
-  { label: "Projects",        path: "/admin/projects" },
-  { label: "Timeline",        path: "/admin/timeline" },
-  { label: "Social Insights", path: "/admin/insights" },
-  { label: "Profile",         path: "/admin/profile" },
+  { label: "Dashboard",       path: "/gac-studio" },
+  { label: "Projects",        path: "/gac-studio/projects" },
+  { label: "Timeline",        path: "/gac-studio/timeline" },
+  { label: "Social Insights", path: "/gac-studio/insights" },
+  { label: "Profile",         path: "/gac-studio/profile" },
 ];
 
 function signOut(navigate: ReturnType<typeof useNavigate>) {
   localStorage.removeItem("admin_token");
-  navigate("/admin/login");
+  navigate("/gac-studio/login");
 }
 
 export default function AdminLayout({ children }: { children: ReactNode }) {
@@ -19,7 +19,7 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     if (!localStorage.getItem("admin_token")) {
-      navigate("/admin/login");
+      navigate("/gac-studio/login");
     }
   }, [navigate]);
 
@@ -71,7 +71,7 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
             <NavLink
               key={path}
               to={path}
-              end={path === "/admin"}
+              end={path === "/gac-studio"}
               style={({ isActive }) => ({
                 display: "block",
                 padding: "0.55rem 0.75rem",
