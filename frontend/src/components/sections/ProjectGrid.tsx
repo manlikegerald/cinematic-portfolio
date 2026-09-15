@@ -99,11 +99,7 @@ function ProjectCard({ project }: { project: Project }) {
               {project.summary}
             </p>
           </div>
-          <ArrowButton
-            href={`/work/${project.slug}`}
-            label={`View ${project.title}`}
-            size={40}
-          />
+          <ArrowButton as="span" size={40} />
         </div>
       </Link>
     </li>

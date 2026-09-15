@@ -14,8 +14,13 @@ interface Props {
   size?: number;    // diameter in pixels
   className?: string;
   style?: React.CSSProperties;
-  /** If true renders as <a>, otherwise <button> */
-  as?: "a" | "button";
+  /**
+   * Element to render. "a"/"button" (default, inferred from href) for a
+   * standalone control. Use "span" when nesting inside an already-interactive
+   * ancestor (e.g. a card wrapped in its own <Link>) to avoid invalid nested
+   * interactive elements — it renders decorative-only (aria-hidden, no label).
+   */
+  as?: "a" | "button" | "span";
 }
 
 export default function ArrowButton({
@@ -64,7 +69,7 @@ export default function ArrowButton({
   const commonProps = {
     className,
     onClick,
-    "aria-label": label,
+    ...(Tag === "span" ? { "aria-hidden": true } : { "aria-label": label }),
     style: {
       position: "relative" as const,
       display: "inline-flex",
@@ -95,6 +100,12 @@ export default function ArrowButton({
         >
           {inner}
         </motion.a>
+      ) : Tag === "span" ? (
+        <motion.span {...commonProps}
+          whileHover={{ color: "var(--color--accent)" }}
+        >
+          {inner}
+        </motion.span>
       ) : (
         <motion.button {...commonProps}
           whileHover={{ color: "var(--color--accent)" }}
