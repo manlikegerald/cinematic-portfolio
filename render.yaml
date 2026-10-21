@@ -38,7 +38,7 @@ services:
     staticPublishPath: dist
     envVars:
       - key: NODE_VERSION
-        value: 22
+        value: "22"
       # Public URL of the API service plus /api, e.g. https://cinematic-portfolio-api.onrender.com/api
       - key: VITE_API_BASE
         sync: false
