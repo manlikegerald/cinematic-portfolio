@@ -114,27 +114,23 @@ Visit [http://localhost:5173/dev/primitives](http://localhost:5173/dev/primitive
 
 ---
 
-## Deploy
+## Deploy (Render)
 
-### Frontend → Vercel
-```bash
-cd frontend && npm run build
-# Push to GitHub → connect to Vercel → set VITE_API_BASE to your backend URL
-```
+`render.yaml` defines the whole stack: a static site (frontend), a Python web service (FastAPI), and a Postgres database.
 
-### Backend → Fly.io
-```bash
-cd backend
-fly launch   # follow prompts
-fly deploy
-# Set DATABASE_URL secret to a Postgres URL:
-fly secrets set DATABASE_URL=postgres://...
-```
+1. In the Render dashboard: **New → Blueprint**, connect this repo, and apply.
+2. When prompted, set `ADMIN_PASSWORD` (choose a strong one). Leave `ALLOWED_ORIGINS` and `VITE_API_BASE` blank for now.
+3. After the first deploy, copy the two `onrender.com` URLs, then set:
+   - API service → `ALLOWED_ORIGINS` = the static site URL (comma-separate to add a custom domain)
+   - Static site → `VITE_API_BASE` = the API URL + `/api`, then trigger a redeploy (Vite bakes this in at build time)
+4. Seed the empty Postgres **once**, from your machine, using the database's *External* connection string:
+   ```bash
+   cd backend
+   DATABASE_URL="postgresql://..." python scripts/seed_db.py
+   ```
+   Do not run the seed on every deploy — it overwrites profile and project text edited in the admin panel.
 
-### Backend → Railway
-1. Connect your GitHub repo.
-2. Set `DATABASE_URL` in environment variables.
-3. Set start command: `uvicorn app.main:app --host 0.0.0.0 --port $PORT`.
+Note: the admin image upload writes to the API server's local disk, which Render wipes on each deploy, and the frontend never serves it. Add new project images to `frontend/public/images/projects/` and commit them instead.
 
 ---
 
